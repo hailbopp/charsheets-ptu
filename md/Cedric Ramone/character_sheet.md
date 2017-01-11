@@ -3,8 +3,11 @@
 
 ### Overview
 21-year-old male Laid-back Rocker
+
 Level 2
+
 44 HP
+
 5 AP
 
 ### Basic Stats
@@ -84,4 +87,5 @@ Level 2
 
 ### Advancement
 Level 2
+
 Current XP: 2 / 10

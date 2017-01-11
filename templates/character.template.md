@@ -3,8 +3,11 @@
 
 ### Overview
 {{age}}-year-old {{gender|lower}} {{background.name}}
+
 Level {{level}}
+
 {{ (level * 2) + (stats.hp * 3) + 10 }} HP
+
 {{ ((level / 5)|int) + 5 }} AP
 
 ### Basic Stats
@@ -61,4 +64,5 @@ Level {{level}}
 {% endfor %}
 ### Advancement
 Level {{level}}
+
 Current XP: {{current_xp}} / 10

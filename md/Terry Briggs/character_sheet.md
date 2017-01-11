@@ -3,8 +3,11 @@
 
 ### Overview
 16-year-old male Bug Nut
+
 Level 3
+
 55 HP
+
 5 AP
 
 ### Basic Stats
@@ -78,4 +81,5 @@ Level 3
 
 ### Advancement
 Level 3
+
 Current XP: 2 / 10

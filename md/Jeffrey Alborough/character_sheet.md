@@ -3,8 +3,11 @@
 
 ### Overview
 18-year-old male Gentleman In Training
+
 Level 3
+
 58 HP
+
 5 AP
 
 ### Basic Stats
@@ -91,4 +94,5 @@ Level 3
 
 ### Advancement
 Level 3
+
 Current XP: 2 / 10

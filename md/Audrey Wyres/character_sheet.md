@@ -3,8 +3,11 @@
 
 ### Overview
 19-year-old female Mentalist
+
 Level 2
+
 65 HP
+
 5 AP
 
 ### Basic Stats
@@ -92,4 +95,5 @@ Level 2
 
 ### Advancement
 Level 2
+
 Current XP: 2 / 10
