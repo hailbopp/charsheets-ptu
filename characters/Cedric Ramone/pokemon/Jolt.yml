@@ -1,0 +1,57 @@
+name: Jolt
+species: Pichu
+gender: Male
+types:
+  - Electric
+
+level: 7
+current_xp: 9
+nature: Naive
+
+height: 1'0"
+weight: 4.4lb
+
+stats:
+  hp: 4
+  attack: 6
+  special_attack: 10
+  defense: 2
+  special_defense: 2
+  speed: 15
+
+abilities:
+  - Static
+
+capabilities:
+  Overland: 3
+  Swim: 1
+  Long Jump: 1
+  High Jump: 2
+  Power: 1
+  Zapper:
+  Underdog:
+  Naturewalk (Forest):
+  Naturewalk (Urban):
+
+skills:
+  Athletics: 2d6
+  Acrobatics: 3d6
+  Combat: 1d6
+  Stealth: 3d6+2
+  Perception: 2d6
+  Focus: 2d6+1
+
+moves:
+  - Charm
+  - Thundershock
+  - Tail Whip
+
+tutor_points: 2
+tutored: []
+inherited_moves: []
+vitamins: []
+poffins: []
+
+held_item:
+
+notes: ""

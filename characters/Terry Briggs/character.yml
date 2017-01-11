@@ -1,0 +1,74 @@
+name: Terry Briggs
+gender: Male
+age: 16
+
+background:
+  name: Bug Nut
+  skills:
+    adept: Pokemon Education
+    novice: Perception
+    pathetic: Guile, Occult Education, Combat
+
+level: 3
+current_xp: 2
+
+stats:
+  hp: 13
+  attack: 6
+  special_attack: 6
+  defense: 6
+  special_defense: 6
+  speed: 10
+
+edges:
+  - Basic Skills (Stealth)
+  - Elemental Connection (Bug)
+  - Basic Skills (Survival)
+  - Basic Skills (Intuition)
+  - Poke Psychologist
+  - Basic Skills (Command)
+
+features:
+  - Agility Training
+  - Bug Ace
+  - Insectoid Utility
+  - Chitin Shield
+  - Type Refresh
+  - Chronicler
+  - Profile Archive
+
+actions: []
+
+moves: []
+
+skills:
+  acrobatics: 2
+  athletics: 2
+  combat: 1
+  intimidate: 2
+  stealth: 3
+  survival: 3
+  general education: 2
+  medicine education: 2
+  occult education: 1
+  pokemon education: 4
+  technology education: 2
+  guile: 1
+  perception: 3
+  charm: 2
+  command: 3
+  focus: 2
+  intuition: 2
+
+equipment:
+  Head:
+  Body:
+  Main Hand:
+  Off Hand:
+  Feet:
+  Accessory:
+
+inventory:
+  Money: 500
+  Poke Ball: 10
+  Potion: 10

@@ -1,0 +1,58 @@
+name: Klein
+species: Chimchar
+gender: Male
+types:
+  - Fire
+
+level: 7
+current_xp: 9
+nature: Composed
+
+height:
+weight:
+
+stats:
+  hp: 6
+  attack: 8
+  special_attack: 10
+  defense: 6
+  special_defense: 6
+  speed: 11
+
+abilities:
+  - Flash Fire
+
+capabilities:
+  Overland: 5
+  Swim: 3
+  Long Jump: 1
+  High Jump: 2
+  Power: 2
+  Firestarter:
+  Glow:
+  Underdog:
+  Naturewalk (Forest):
+  Naturewalk (Mountain):
+
+skills:
+  Athletics: 3d6+2
+  Acrobatics: 3d6+2
+  Combat: 2d6
+  Stealth: 3d6+2
+  Perception: 3d6
+  Focus: 1d6
+
+moves:
+  - Leer
+  - Scratch
+  - Ember
+
+tutor_points: 2
+tutored: []
+inherited_moves: []
+vitamins: []
+poffins: []
+
+held_item: Type Booster (Fire)
+
+notes: "No damage from fire, powers up."

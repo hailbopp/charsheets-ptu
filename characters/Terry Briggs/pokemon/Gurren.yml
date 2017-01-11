@@ -1,0 +1,58 @@
+name: Gurren
+species: Kakuna
+gender: Male
+types:
+  - Bug
+  - Poison
+
+level: 7
+current_xp: 9
+nature: Docile
+
+height: Small
+weight: 1
+
+stats:
+  hp: 12
+  attack: 3
+  special_attack: 4
+  defense: 12
+  special_defense: 4
+  speed: 5
+
+abilities:
+  - Shed Skin
+
+capabilities:
+  Overland: 2
+  Swim: 2
+  Long Jump: 1
+  High Jump: 1
+  Power: 1
+  Underdog:
+  Threaded:
+  Naturewalk (Forest):
+  Naturewalk (Grassland):
+
+skills:
+  Athletics: 1d6
+  Acrobatics: 1d6
+  Combat: 2d6
+  Stealth: 2d6
+  Perception: 2d6
+  Focus: 3d6
+
+moves:
+  - Poison Sting
+  - String Shot
+  - Harden
+
+tutor_points: 2
+tutored: []
+inherited_moves: []
+vitamins: []
+poffins: []
+
+held_item:
+
+notes: ""

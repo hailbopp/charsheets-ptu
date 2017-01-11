@@ -1,0 +1,58 @@
+name: Flo
+species: Flabébé
+gender: Female
+types:
+  - Fairy
+
+level: 6
+current_xp: 0
+nature: Cuddly
+
+height:
+weight:
+
+stats:
+  hp: 5
+  attack: 5
+  special_attack: 7
+  defense: 6
+  special_defense: 15
+  speed: 6
+
+abilities:
+  - Flower Veil
+
+capabilities:
+  Overland: 2
+  Swim: 2
+  Long Jump: 0
+  High Jump: 1
+  Power: 1
+  Underdog:
+  Levitate: 4
+  Alluring:
+  Naturewalk (Forest):
+  Naturewalk (Grassland):
+
+skills:
+  Athletics: 1d6
+  Acrobatics: 3d6
+  Combat: 1d6
+  Stealth: 3d6+2
+  Perception: 3d6
+  Focus: 2d6+2
+
+moves:
+  - Tackle
+  - Vine Whip
+  - Fairy Wind
+
+tutor_points: 2
+tutored: []
+inherited_moves: []
+vitamins: []
+poffins: []
+
+held_item:
+
+notes: ""

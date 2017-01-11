@@ -1,0 +1,87 @@
+name: Jeffrey Alborough
+gender: Male
+age: 18
+
+background:
+  name: Gentleman In Training
+  skills:
+    adept: General Education
+    novice: Charm
+    pathetic: Acrobatics, Stealth, Occult Education
+
+level: 3
+current_xp: 2
+
+stats:
+  hp: 14
+  attack: 6
+  special_attack: 6
+  defense: 6
+  special_defense: 8
+  speed: 9
+
+edges:
+  - Basic Skills (Medicine Ed)
+  - Basic Skills (Technology Ed)
+  - Basic Skills (Combat)
+  - Confidence Artist
+  - Basic Skills (Command)
+  - Medic Training
+  - Adept Skills (Guile)
+
+features:
+  - Agility Training
+  - Researcher (General Research, Chemistry)
+  - Breadth of Knowledge (Pokemon Ed, Medicine Ed, Medic Training)
+  - Live and Learn
+  - Quick Switch
+  - Provacateur
+  - Quick Wit
+
+actions: []
+
+moves:
+  - Confide
+  - Taunt
+  - Sweet Kiss
+
+skills:
+  acrobatics: 1
+  athletics: 2
+  combat: 3
+  intimidate: 2
+  stealth: 1
+  survival: 2
+  general education: 4
+  medicine education: 3
+  occult education: 1
+  pokemon education: 2
+  technology education: 3
+  guile: 4
+  perception: 2
+  charm: 3
+  command: 3
+  focus: 2
+  intuition: 2
+
+equipment:
+  Head: Bowler Hat
+  Body:
+  Main Hand: Umbrella
+  Off Hand:
+  Feet:
+  Accessory:
+
+inventory:
+  money: 150
+  Fire Type Booster: 1
+  Old Rod: 1
+  Flashlight: 1
+  Potion: 2
+  Revive: 1
+  Great Ball: 1
+  Poke Ball: 1
+  Bait: 1
+  Umbrella: 1
+  Bowler Hat: 1
+  Monacle: 1

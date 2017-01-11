@@ -1,0 +1,59 @@
+name: Amelia
+species: Ralts
+gender: Female
+types:
+  - Psychic
+  - Fairy
+
+level: 7
+current_xp: 9
+nature: Timid
+
+height:
+weight: 1
+
+stats:
+  hp: 4
+  attack: 2
+  special_attack: 10
+  defense: 6
+  special_defense: 7
+  speed: 9
+
+abilities:
+  - Trace
+
+capabilities:
+  Overland: 4
+  Swim: 1
+  Long Jump: 1
+  High Jump: 1
+  Power: 1
+  Telekinetic:
+  Telepath:
+  Underdog:
+  Naturewalk (Forest):
+  Naturewalk (Urban):
+
+skills:
+  Athletics: 1d6+2
+  Acrobatics: 2d6
+  Combat: 1d6
+  Stealth: 3d6
+  Perception: 3d6
+  Focus: 3d6
+
+moves:
+  - Growl
+  - Confusion
+  - Double Team
+
+tutor_points: 2
+tutored: []
+inherited_moves: []
+vitamins: []
+poffins: []
+
+held_item: Type Booster (Fire)
+
+notes: "Sweet > Spicy"
