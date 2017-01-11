@@ -3,9 +3,12 @@
 
 ### Overview
 Level 6 female Cuddly Flabébé
+
 Type: Fairy
 Height: None
+
 Weight: None
+
 31 HP
 
 ### Basic Stats
@@ -52,4 +55,5 @@ Weight: None
 
 ### Advancement
 Tutor Points: 2
+
 XP: 0

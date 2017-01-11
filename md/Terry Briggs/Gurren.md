@@ -3,9 +3,12 @@
 
 ### Overview
 Level 7 male Docile Kakuna
+
 Type: Bug / Poison
 Height: Small
+
 Weight: 1
+
 53 HP
 
 ### Basic Stats
@@ -51,4 +54,5 @@ Weight: 1
 
 ### Advancement
 Tutor Points: 2
+
 XP: 9

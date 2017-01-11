@@ -3,9 +3,12 @@
 
 ### Overview
 Level 4 male Relaxed Fletchling
+
 Type: Normal / Flying
 Height: None
+
 Weight: None
+
 32 HP
 
 ### Basic Stats
@@ -49,4 +52,5 @@ Weight: None
 
 ### Advancement
 Tutor Points: 2
+
 XP: 0

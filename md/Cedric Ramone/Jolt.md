@@ -3,9 +3,12 @@
 
 ### Overview
 Level 7 male Naive Pichu
+
 Type: Electric
 Height: 1'0"
+
 Weight: 4.4lb
+
 29 HP
 
 ### Basic Stats
@@ -51,4 +54,5 @@ Weight: 4.4lb
 
 ### Advancement
 Tutor Points: 2
+
 XP: 9

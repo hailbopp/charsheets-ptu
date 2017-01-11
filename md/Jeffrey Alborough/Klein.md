@@ -3,9 +3,12 @@
 
 ### Overview
 Level 7 male Composed Chimchar
+
 Type: Fire
 Height: None
+
 Weight: None
+
 35 HP
 
 ### Basic Stats
@@ -52,4 +55,5 @@ Weight: None
 
 ### Advancement
 Tutor Points: 2
+
 XP: 9

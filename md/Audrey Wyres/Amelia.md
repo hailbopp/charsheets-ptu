@@ -3,9 +3,12 @@
 
 ### Overview
 Level 7 female Timid Ralts
+
 Type: Psychic / Fairy
 Height: None
+
 Weight: 1
+
 29 HP
 
 ### Basic Stats
@@ -52,4 +55,5 @@ Weight: 1
 
 ### Advancement
 Tutor Points: 2
+
 XP: 9
