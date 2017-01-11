@@ -3,13 +3,17 @@
 
 ### Overview
 Level {{level}} {{gender|lower}} {{nature}} {{species}}
+
 {% if (types|length) is equalto 2 -%}
 Type: {{types|first}} / {{types|last}}
 {% else -%}
 Type: {{types|first}}
 {% endif -%}
+
 Height: {{height}}
+
 Weight: {{weight}}
+
 {{level + (stats.hp * 3) + 10}} HP
 
 ### Basic Stats
@@ -44,5 +48,6 @@ Weight: {{weight}}
 {% endfor %}
 ### Advancement
 Tutor Points: {{tutor_points}}
+
 XP: {{current_xp}}
 
