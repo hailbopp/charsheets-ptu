@@ -1,4 +1,7 @@
+from copy import deepcopy
+
 import shutil
+from docx import Document
 from docxtpl import DocxTemplate, R
 from os import listdir, makedirs
 from os.path import isdir, join, exists
@@ -62,6 +65,22 @@ def chunks(l, n):
         yield l[i:i + n]
 
 
+def combine_word_documents(files, target):
+    merged_document = Document()
+
+    for index, file in enumerate(files):
+        sub_doc = Document(file)
+
+        # Don't add a page break if you've reached the last file.
+        if index < len(files)-1:
+            sub_doc.add_page_break()
+
+        for element in sub_doc.element.body:
+            merged_document.element.body.append(element)
+
+    merged_document.save(target)
+
+
 def generate_cards():
     if exists('cards'):
         shutil.rmtree('cards')
@@ -81,18 +100,22 @@ def generate_cards():
                 pokedata = yaml.load(poke_src)
             for m in pokedata['moves']:
                 try:
-                    move = get_movedata(m)
+                    move = deepcopy(get_movedata(m))
                     move['CharacterName'] = R("%s (%s)\n%s" % (pokedata['name'], pokedata['species'], char_name))
 
                     # Apply STAB
                     if move['Type'] in pokedata['types'] and move.get('Damage', None):
-                        move['Damage'] = "DB %d" % (move['Damage'] + 2)
+                        move['Damage'] = int(move['Damage']) + 2
+                    if move.get('Damage', None):
+                        move['Damage'] = "DB " + str(move['Damage'])
                     moves += [move]
-                except:
+                except Exception as e:
+                    print(e)
                     print(m)
 
     docnum = 0
-    for card_page in chunks(moves, 5):
+    pages = list(chunks(moves, 5))
+    for card_page in pages:
         print(card_page)
         while len(card_page) < 5:
             card_page += [{}]
@@ -100,6 +123,9 @@ def generate_cards():
         movecard_template.render({'moves': card_page})
         movecard_template.save('cards/cards_%d.docx' % docnum)
         docnum += 1
+
+    #doc_files = ['cards/cards_%d.docx' % n for n in range(len(pages))]
+    #combine_word_documents(doc_files, "cards/cards.docx")
 
 
 if __name__ == "__main__":
