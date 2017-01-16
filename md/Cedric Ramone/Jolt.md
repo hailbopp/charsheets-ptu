@@ -39,7 +39,7 @@ Weight: 4.4lb
 
 ### Moves
 * Charm
-* Thundershock
+* Thunder Shock
 * Tail Whip
 
 ### Skills
