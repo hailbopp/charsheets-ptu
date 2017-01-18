@@ -53,4 +53,4 @@ Weight: None
 ### Advancement
 Tutor Points: 2
 
-XP: 0
+XP: 30

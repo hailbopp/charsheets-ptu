@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from __future__ import print_function, unicode_literals
 
 from copy import deepcopy
@@ -10,6 +12,7 @@ from os.path import isdir, join, exists
 
 from jinja2 import Environment, FileSystemLoader
 import yaml
+from tqdm import tqdm
 
 jinja = Environment(
     loader=FileSystemLoader('./templates'),
@@ -18,6 +21,8 @@ jinja = Environment(
 characters = [d for d in listdir('characters') if isdir(join('characters', d))]
 with open('data/movelist.yml') as movesfile:
     moves_data = yaml.load(movesfile)
+with open('data/damage_chart.yml') as damagefile:
+    damage_chart = yaml.load(damagefile)
 
 
 def generate():
@@ -83,42 +88,57 @@ def combine_word_documents(files, target):
     merged_document.save(target)
 
 
+class EntityType:
+    Player = "Player"
+    Pokemon = "Pokemon"
+
+
+def get_entity_moves(entity, entity_type):
+    moves = []
+    for m in entity['moves']:
+        move = deepcopy(get_movedata(m))
+
+        if move.get('Damage', None):
+            damage_base = int(move['Damage'])
+            atk_stat = "attack" if move['MoveCategory'] == "Physical" else "special_attack"
+            # Apply STAB if applicable
+            if entity.get('types', None) and move['Type'] in entity['types']:
+                damage_base += 2
+            damage_roll = "%s+%s" % (damage_chart.get(damage_base), entity['stats'][atk_stat])
+            move['Damage'] = "DB %d: %s" % (damage_base, damage_roll)
+
+        if entity_type == EntityType.Player:
+            move['CharacterName'] = entity['name']
+        elif entity_type == EntityType.Pokemon:
+            move['CharacterName'] = R("%s (%s)\n%s" % (entity['name'], entity['species'], entity['player_name']))
+
+        moves.append(move)
+    return moves
+
+
 def generate_cards():
     if exists('cards'):
         shutil.rmtree('cards')
     makedirs('cards')
 
-    moves = []
-    for char_name in characters:
+    entities = []
+    for char_name in tqdm(characters):
         with open('characters/%s/character.yml' % char_name, 'r') as sf:
             chardata = yaml.load(sf)
-            for m in chardata['moves']:
-                move = get_movedata(m)
-                move['CharacterName'] = char_name
-                moves += [move]
-        pokemon = [y for y in listdir('characters/%s/pokemon' % char_name)]
-        for p in pokemon:
+            entities.append((chardata, EntityType.Player))
+        for p in [y for y in listdir('characters/%s/pokemon' % char_name)]:
             with open('characters/%s/pokemon/%s' % (char_name, p), 'r') as poke_src:
                 pokedata = yaml.load(poke_src)
-            for m in pokedata['moves']:
-                try:
-                    move = deepcopy(get_movedata(m))
-                    move['CharacterName'] = R("%s (%s)\n%s" % (pokedata['name'], pokedata['species'], char_name))
+                pokedata['player_name'] = char_name
+                entities.append((pokedata, EntityType.Pokemon))
 
-                    # Apply STAB
-                    if move['Type'] in pokedata['types'] and move.get('Damage', None):
-                        move['Damage'] = int(move['Damage']) + 2
-                    if move.get('Damage', None):
-                        move['Damage'] = "DB " + str(move['Damage'])
-                    moves += [move]
-                except Exception as e:
-                    print(e)
-                    print(m)
+    moves = []
+    for e in entities:
+        moves += get_entity_moves(*e)
 
     docnum = 0
     pages = list(chunks(moves, 5))
     for card_page in pages:
-        print(card_page)
         while len(card_page) < 5:
             card_page += [{}]
         movecard_template = DocxTemplate("templates/movecards.template.docx")
