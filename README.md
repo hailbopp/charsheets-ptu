@@ -23,6 +23,8 @@ Expects an object of this form:
 
 [Amelia](md/Audrey Wyres/Amelia.md)
 
+[Snekans](md/Audrey Wyres/Snekans.md)
+
 
 ## Cedric Ramone
 [Cedric Ramone's sheet](md/Cedric Ramone/character_sheet.md)
@@ -50,4 +52,6 @@ Expects an object of this form:
 [Flo](md/Terry Briggs/Flo.md)
 
 [Gurren](md/Terry Briggs/Gurren.md)
+
+[Naga](md/Terry Briggs/Naga.md)
 

@@ -1,0 +1,1955 @@
+- name: Perseverance
+  prerequisites:
+  - Ace Trainer
+  trigger: Your Pokémon gains an Injury
+  effect: The target instead does not gain an Injury. Perseverance may activate only once per Scene per target.
+- name: Critical Moment
+  keywords:
+  - Orders
+  prerequisites:
+  - Elite Trainer
+  - Adept Command
+  frequency: Scene x2
+  action_type: Standard Action
+  target: Your Pokemon with [Training] Features applied
+  effect: The bonuses from your Pokemon’s [Training] are tripled until the end of your next turn.
+- name: Top Percentage
+  prerequisites:
+  - Ace Trainer
+  - Expert Command
+  frequency: At-Will
+  action_type: Free Action
+  trigger: Your Pokémon levels up to a Level evenly divisible by 5
+  effect: Your Pokémon gains an extra Tutor Point. Top Percentage may be used on a single Pokémon a maximum of 4 times. Once a Pokémon has gained 4 Tutor Points in this way, increase each of that Pokémon’s Base Stats by +1.
+- name: Signature Technique
+  prerequisites:
+  - Elite Trainer
+  - Expert Command
+  frequency: At-Will
+  action_type: Extended Action
+  target: Your Pokémon with at least 2 Tutor Points
+  effect: The target loses 2 Tutor Points. Choose one Move on the Target’s Move List. That Move becomes the target’s Signature Technique, and you may apply one of the modifications on the next page to the Move. The Move being modified must fit the category of the modification, and you must have the associated Training Feature to apply a modification. A Pokémon may only have one Signature Technique at a time. If you choose to teach a Pokémon a different Signature Technique, the old one is lost, and 1 Tutor Point is refunded. 1 Tutor Point is also refunded if the Pokémon ever forgets a Signature Technique Move.
+  notes: Be sure to give a cool name to your Pokémon’s Signature Technique!
+- name: Champ in the Making
+  prerequisites:
+  - 4 Ace Trainer Features
+  - Master Command
+  frequency: Drain 1 AP
+  action_type: Free Action
+  trigger: You use Ace Trainer to give Pokémon Trained Stats
+  effect: Choose two Trained Stats for each Pokémon instead of one. A Pokémon may only have two Trained Stats this way.
+- name: Ace Trainer
+  keywords:
+  - CLASS
+  prerequisites:
+  - Novice Command
+  trigger: You spend at least half an hour training your Pokémon
+  effect: For each Pokémon that has been trained during this time, choose a Stat besides HP; that Stat becomes Trained until an Extended Rest is taken. The default State of Trained Stats is +1 Combat Stages instead of 0. A Pokémon may have only one Trained Stat at a time.
+  notes: Just to clarify, this Feature Drains 1 AP per training session, not per Pokémon. So train as many as you can to get the most out of this Feature!
+- name: Captured Momentum
+  keywords:
+  - +Speed
+  prerequisites:
+  - Advanced Capture Techniques Rank 2
+  frequency: At-Will
+  action_type: Free Action
+  trigger: You successfully Capture a Pokémon
+  effect: >-
+    You or your Pokémon gain a +2 bonus to their next Accuracy Roll during this combat.
+
+    You subtract your highest Skill Rank out of Acrobatics, Athletics, Stealth, Survival, Guile, or Perception from your next Capture Roll during this combat.
+
+    You gain 1 Temporary Action Point that disappears after one full round.
+- name: Gotta Catch ‘Em All
+  keywords:
+  - +SPEED
+  prerequisites:
+  - Advanced Capture Techniques Rank 3
+  frequency: Daily x3
+  action_type: Swift Action
+  trigger: Your make a Capture Roll.
+  effect: You may switch the rolled digits on your 1d100 roll. For example, if you roll a 91, that can be switched to a 19. This does not turn a roll of 1 into a “Natural” roll of 100.
+- name: Mobilize
+  keywords:
+  - Orders
+  prerequisites:
+  - Commander
+  frequency: At-Will
+  action_type: Free Action
+  target: Any Ally
+  effect: The target cannot provoke Attacks of Opportunity on their next turn. Mobilize may target an Ally only once per encounter.
+- name: Battle Conductor
+  prerequisites:
+  - Leadership
+  frequency: At-Will
+  action_type: Swift Action
+  trigger: You give [Orders] with a Frequency of At-Will that have targets
+  effect: You may target up to two additional Allies with the [Orders].
+  notes: This may be used with [Orders] that are have AP costs, but the AP Cost must be paid separately for each target if so.
+- name: Complex Orders
+  prerequisites:
+  - Mastermind
+  - at least two Features with the [Orders] Tag that have targets
+  frequency: At-Will
+  action_type: Shift Action
+  trigger: You give [Orders] that have targets.
+  effect: You may choose a different Order to give to each Target. You must pay all AP costs and follow Frequency restrictions for all Orders used in this way.
+- name: Tip the Scales
+  prerequisites:
+  - Commander
+  - Expert Command
+  frequency: 2 AP
+  action_type: Swift Action
+  trigger: You give [Orders] that have targets.
+  effect: Your [Orders] with an At-Will Frequency instead target all allies within 10 Meters.
+- name: Scheme Twist
+  prerequisites:
+  - Commander
+  - Master Command
+  frequency: Scene x2
+  action_type: Swift Action
+  trigger: You give [Orders] with a Daily or Scene Frequency that have Targets.
+  effect: You may target up to two additional Allies with the [Orders].
+- name: Decisive Director
+  keywords:
+  - ORDERS
+  prerequisites:
+  - Coordinator
+  frequency: At-Will
+  action_type: Standard Action
+  target: A Pokémon
+  effect: Add or subtract X from the target’s Initiative until the end of your next turn. X is equal to your Charm Rank doubled.
+- name: Adaptable Performance
+  prerequisites:
+  - Coordinator
+  frequency: Scene
+  action_type: Free Action
+  trigger: Your Pokémon’s Turn to use a Move in a Contest
+  effect: Choose two of your Pokémon’s Moves. Your Pokémon may perform your Contest Move as if had the Contest Typing of one of your chosen Moves, and had the effects of the other. You may not use either move on the next round of the contest. This effect may be used once per Contest.
+- name: Flexible Preparations
+  prerequisites:
+  - Adaptable Performance
+  - Adept Charm
+  - Command
+  - Guile
+  - Intimidate
+  - or Intuition
+  frequency: Daily
+  action_type: Extended Action
+  target: A Pokémon that has Contest Stats from Poffins
+  effect: The target may reallocate up to 2d6 of Poffin- Derived Contest Stats from one Contest Stat to another. This effect lasts until the end of the day.
+- name: Innovation
+  prerequisites:
+  - Adaptable Performance
+  frequency: Daily
+  action_type: Extended Action
+  target: A Pokémon with at least 1 Tutor Point.
+  effect: The target loses 1 Tutor Point, and then learns a Move created with Innovation. See the next section for details on creating Moves for this Feature.
+- name: Nuanced Performance
+  prerequisites:
+  - Coordinator
+  - Expert Charm
+  - Command
+  - Guile
+  - Intimidate
+  - or Intuition
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: Your Pokémon miss all targets with a Move
+  effect: That Move’s Frequency is not expended. This does not work with Moves that may fail to activate, such as moves with the Execute keyword.
+- name: Reliable Performance
+  prerequisites:
+  - Nuanced Performance
+  - Master Charm
+  - Command
+  - Guile
+  - Intimidate
+  - or Intuition
+  frequency: 2 AP
+  action_type: Free Action
+  trigger: Your Pokémon makes an Appeal Roll, Accuracy Check, or Skill Check
+  effect: For appeal rolls, instead of making the Appeal Roll, you gain 1 Appeal Point for each Dice you would have rolled. For Accuracy Checks, act as if you had rolled a 10. For Skill Checks, multiply 3.5 by your Pokémon’s Skill Rank, and use the resulting number as the result of your roll, rounded down. For all rolls, add or subtract any modifiers as normal.
+- name: Coordinator
+  keywords:
+  - CLASS
+  prerequisites:
+  - Grace
+  frequency: 1 AP
+  action_type: Free Action
+  effect: Your Pokémon may reroll a single Appeal Roll or Damage Roll. This Ability may be used only once per Contest, and once per Pokémon per Scene.
+- name: Lessons
+  prerequisites:
+  - Mentor
+  frequency: Daily x3
+  action_type: Extended Action
+  effect: >-
+    You may perform any Mentor Lesson for which
+
+    you qualify.
+- name: Expand Horizons
+  prerequisites:
+  - Mentor
+  frequency: At-Will
+  action_type: Extended Action
+  target: Your Pokémon
+  effect: Your Pokémon gains 3 Tutor Points. A Pokémon may be targeted by Expand Horizons only once.
+- name: Move Tutor
+  prerequisites:
+  - Mentor
+  - one Mentor Skill at Expert Rank
+  frequency: Daily
+  action_type: Extended Action
+  target: A Pokémon with at least 2 Tutor Points.
+  effect: >-
+    The target loses 2 Tutor Points, and learns any
+
+    move from its Tutor List.
+- name: Egg Tutor
+  prerequisites:
+  - Move Tutor
+  frequency: Daily
+  action_type: Extended Action
+  target: A Pokémon with at least 2 Tutor Points.
+  effect: The target loses 2 Tutor Points, and learns any Move from its Egg Move List. A Pokémon may be targeted by Egg Tutor only one time.
+- name: Mentor
+  keywords:
+  - CLASS
+  prerequisites:
+  - Two of Charm
+  - Intimidate
+  - Intuition
+  - or Pokémon Education at Novice Rank
+  frequency: Daily x3
+  action_type: Extended Action
+  target: A Pokémon with at least 1 Tutor Point remaining
+  effect: >-
+    The target loses 1 Tutor Point, and then learns a move from its tutor list marked with a (N), or any move on its level-up list learned at X Level or lower, where X is the target’s current Level plus the sum of your Mentor Skill Ranks. Note that despite being Tutored, these Moves count as if they were “natural” for organizational purposes.
+
+    Special: When you take Mentor, choose two of Charm, Intimidate, Intuition, and Pokémon Education to become your Mentor Skills.
+- name: Cheer Brigade
+  prerequisites:
+  - Cheerleader
+  frequency: At-Will
+  action_type: Extended Action
+  target: Your Pokémon with at least 2 Tutor Points remaining
+  effect: Your Pokémon loses 2 Tutor Points and gains the Friend Guard Ability.
+- name: Gleeful Interference
+  prerequisites:
+  - Cheer Brigade
+  - Adept Charm
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: Your Pokémon with the Friend Guard Ability hits a foe with a damaging attack
+  effect: The triggering foe gains a -2 penalty to Accuracy for one full Round.
+- name: Moment of Action
+  keywords:
+  - ORDERS
+  prerequisites:
+  - Cheerleader
+  frequency: At-Will
+  action_type: Standard Action
+  target: Up to two Allied Trainers
+  effect: Each target gains 1 Temporary Action Point. These Action Points disappear after one full Round.
+- name: Go, Fight, Win!
+  keywords:
+  - ORDERS
+  prerequisites:
+  - Moment of Action
+  - Expert Charm
+  frequency: At-Will
+  action_type: Standard Action + Swift Action
+  effect: >-
+    Choose and perform one of the cheers below. You may perform each Cheer only once per Scene.
+
+    Show Your Best!: Choose Defense or Special Defense. All allies on the field gain +1 Combat Stage in the Chosen Stat and become Motivated.
+
+    Don’t Stop Now!: All allies on the field gain Temporary Hit Points equal to your Charm Rank and become Excited.
+
+    I Believe In You!: All allies on the field gain a +2 bonus to Evasion for one full Round, and become Cheered.
+- name: Keep Fighting!
+  prerequisites:
+  - 5 Cheerleader Features
+  - Master Charm
+  frequency: Daily x2
+  action_type: Free Action
+  trigger: Your Pokémon or an Ally Trainer with over 1 Hit Point is reduced to 0 Hit Points or lower
+  effect: That Ally’s Hit Point count is reduced to 1 instead, and then gains Temporary Hit Points equal to your Charm Rank doubled.
+- name: Cheerleader
+  keywords:
+  - CLASS
+  prerequisites:
+  - Inspired Training
+  - Novice Charm
+  frequency: X AP
+  action_type: Free Action
+  trigger: You use Orders
+  effect: Choose Cheered, Excited, or Motivated. All allies affected by the triggering effect gain the chosen condition. This Feature costs 0 AP if the triggering effect affects only one ally, and costs 1 AP if it affects two or more.
+- name: Expend Momentum
+  keywords:
+  - Orders
+  prerequisites:
+  - Duelist
+  frequency: At-Will
+  action_type: Standard Action
+  target: Your Pokémon under the effects of Focused Training
+  effect: >-
+    Apply one of the following effects on the target by spending that much Momentum.
+
+    Spend 1 Momentum: Your Pokémon regains use of a EOT Frequency Move.
+
+    Spend 2 Momentum: Your Pokémon automatically rolls an 11 on one d20 Roll of your choice on their next turn.
+
+    Spend 3 Momentum: Your Pokémon regains a use of Scene Frequency Move. May be chosen only once per Scene per Pokémon.
+- name: Effective Methods
+  prerequisites:
+  - Duelist
+  frequency: At-Will
+  action_type: Extended Action
+  target: Your Pokémon with at least 2 Tutor Points remaining
+  effect: Your Pokémon loses 2 Tutor Points and gains your choice of the Exploit or Tolerance Ability. You may only target a Pokémon once with Effective Methods.
+- name: Type Methodology
+  prerequisites:
+  - Effective Methods
+  - Adept Focus
+  frequency: Scene x2
+  action_type: Free Action
+  trigger: See Effect
+  effect: >-
+    Effects depend on whether your Pokémon has the Tolerance or Exploit ability.
+
+    Whenever your Pokémon with Tolerance takes Super-Effective damage from a Tagged foe, your Pokémon may lose 2 Momentum to Resist that attack one step.
+
+    Whenever your Pokémon with Exploit deals Resisted damage to a Tagged foe, your Pokémon may lose 2 Momentum to increase the effectiveness of the attack one step.
+- name: Duelist’s Manual
+  keywords:
+  - Orders
+  prerequisites:
+  - Expend Momentum
+  - Effective Methods
+  - Expert Focus
+  frequency: 2 AP
+  action_type: Standard Action
+  target: Your Pokémon under the effects of Focused Training
+  effect: >-
+    Apply one of the following effects. To choose an effect, your Pokémon must have a certain amount of Momentum. (Duelist’s Manual does not spend Momentum).
+
+    1 Momentum: Your Pokémon doubles their bonuses from Tolerance or Exploit until the end of their next turn and may change their Tolerance Ability into Exploit, or vice versa, until the end of their next turn.
+
+    2 Momentum: Your Pokémon’s next Pass, Cone, Close Blast, or Burst attack becomes a single target Melee attack, or their next Line or Ranged Blast attack becomes a single target Ranged attack. If this attack hits, the target becomes Vulnerable for one full round and has their Initiative set to 0 until the end of their next turn.
+
+    3 Momentum: Your Pokémon may act while ignoring the Confused, Rage, Infatuation, and Suppressed Volatile Status on their next turn as long as they attempt to attack a Tagged foe. May only be used once per Scene per Pokémon.
+- name: Seize The Moment
+  prerequisites:
+  - Duelist
+  - Master Focus
+  frequency: Scene x2
+  action_type: Free Action
+  trigger: Your Pokémon would gain Momentum while already at 6 Momentum
+  effect: Your Pokémon loses 6 Momentum, and then gains +1 Momentum. Your Pokémon may immediately make an attack as an Interrupt, but this attack must target only a Tagged Foe. If the attack misses, it still deals damage as if it had the Smite keyword. If the attack hits, it’s automatically a Critical Hit. If it would have already been a Critical Hit, your Pokémon gains Hit Points equal to half of its maximum Hit Points. May be used only once per Scene per Pokémon.
+- name: Duelist
+  keywords:
+  - Class
+  prerequisites:
+  - Focused Training
+  - Novice Focus
+  frequency: At-Will
+  action_type: Swift Action
+  target: A Pokémon or Trainer
+  effect: >-
+    The Foe becomes Tagged; or if the foe is already Tagged, the foe loses the Tag. Only one foe can be Tagged this way at a time. If a new Foe is Tagged, all other Tags are lost.
+
+    our Pokémon under the effects of Focused Training gain half their Momentum (rounded up) as a Bonus to Accuracy and Evasion against Tagged Foes, but as long as a Foe is Tagged, they do not benefit from Focused Training’s Accuracy Bonus against other foes.
+- name: Staying Power
+  prerequisites:
+  - Enduring Soul
+  frequency: Scene
+  action_type: Free Action
+  trigger: Your Pokémon Takes a Breather
+  effect: Your Pokémon may “Take a Breather” even if it is Confused or Enraged, and it does not Trip or have to Shift away from enemies as part of the action. You may choose whether or not your Pokémon resets their Combat Stages to default.
+- name: Resilience
+  prerequisites:
+  - Awareness
+  - Expert Athletics or Focus
+  frequency: 2 AP
+  action_type: Free Action
+  trigger: Your Pokémon is hit by a Critical Hit or gains a Status Affliction (or both)
+  effect: Your Pokémon does not gain a Status Affliction, and the triggering attack does damage as if it was not a Critical Hit. Resilience may only be used once per target per Scene.
+- name: Not Yet!
+  prerequisites:
+  - Enduring Soul
+  - Expert Athletics or Focus
+  frequency: Scene
+  action_type: Free Action
+  trigger: Your Pokémon is Fainted, but is not at less than -100% Hit Points.
+  effect: Before fainting, the targeted Pokémon gains an Injury, and may then use a Move as an Interrupt. When the Move is resolved, the Pokémon then immediately faints. This consumes a Command as normal. This cannot be used with the Move Explosion, Flail, Pain Split, Reversal or Selfdestruct.
+- name: Vim and Vigor
+  prerequisites:
+  - Shrug Off
+  - Master Athletics or Focus
+  frequency: At-Will
+  action_type: Extended Action
+  target: Your Pokémon with at least 2 Tutor Points
+  effect: You spend an hour with the target. The target loses 2 Tutor Points, and gains the Vigor Ability. Vim and Vigor may target a Pokémon only once.
+- name: Bounce Shot
+  keywords:
+  - +SPEED
+  prerequisites:
+  - Juggler
+  frequency: At-Will
+  action_type: Free Action
+  trigger: You throw a Poké Ball
+  effect: After hitting its mark or landing, your Poké Ball bounces 3 meters in any direction. You may have your Poké Ball trigger captures or releases before or after the bounce.
+- name: Round Trip
+  keywords:
+  - +SPEED
+  prerequisites:
+  - Juggler
+  - Adept Acrobatics or Guile
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: Your Pokémon uses a Move.
+  effect: You may immediately switch your Pokémon that just performed a Move for another of your Pokémon. This effect lets Pokémon with the Trapped condition switch out.
+- name: Tag In
+  keywords:
+  - +SPEED
+  prerequisites:
+  - Round Trip
+  - Expert Acrobatics or Guile
+  trigger: You recall a Pokémon
+  effect: The next Pokémon you send out is treated as if the recalled Pokémon had used Baton Pass on it.
+- name: Emergency Release
+  keywords:
+  - +SPEED
+  prerequisites:
+  - Juggler
+  - Expert Acrobatics or Guile
+  frequency: 2 AP
+  action_type: Shift Action, Interrupt
+  effect: You may Release a Pokémon as an Interrupt.
+- name: First Blood
+  keywords:
+  - +SPEED
+  prerequisites:
+  - Tag In
+  - Master Acrobatics or Guile
+  frequency: Scene
+  action_type: Free Action
+  trigger: You release a Pokémon from its Poké Ball
+  effect: If you have a Command Action available this round or next, your Pokémon may use a Move as an Interrupt as soon as it is sent out. This consumes your Command action for the round (or the following round) as normal.
+- name: Ramming Speed
+  keywords:
+  - +Speed
+  prerequisites:
+  - Rider
+  frequency: At-Will
+  action_type: Extended Action
+  target: Your Pokémon with at least 2 Tutor Points
+  effect: The target loses 2 Tutor Points and gains the Run Up Ability.
+- name: Conqueror’s March
+  keywords:
+  - Orders
+  - +Speed
+  prerequisites:
+  - Ramming Speed
+  - Adept Acrobatics or Athletics
+  frequency: At-Will
+  action_type: Standard Action
+  target: Your Pokémon with Run Up
+  effect: This round, if being used as a Mount, the target may use Dash, Burst, Blast, Cone, or Line range Moves with a range of Pass instead of their usual range.
+- name: Lean In
+  keywords:
+  - +Speed
+  prerequisites:
+  - Ride as One
+  frequency: Scene x2
+  action_type: Free Action
+  trigger: You and your Mount both take Damage from a Burst, Blast, Cone, or Line
+  effect: Both you and your Mount Resist the attack one step further.
+- name: Cavalier’s Reprisal
+  keywords:
+  - +Speed
+  prerequisites:
+  - Ride as One
+  - Expert Acrobatics or Athletics
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: An adjacent foe hits your Mount with an attack
+  effect: You may make a Struggle Attack against the triggering foe.
+- name: Overrun
+  keywords:
+  - +Speed
+  prerequisites:
+  - Conqueror’s March
+  - Expert Acrobatics or Athletics
+  frequency: Scene x2
+  action_type: Free Action
+  trigger: Your Mount with Run Up makes a Damage Roll for a Dash or Pass Move
+  effect: Your Pokémon adds their Speed Stat in addition to their normal attacking Stat to their Damage Roll. The target gains Damage Reduction against this attack equal to their own Speed Stat.
+- name: Quick Healing
+  prerequisites:
+  - Taskmaster
+  frequency: At-Will
+  action_type: Extended Action
+  effect: Your Hardened Pokémon may use Quick Healing to remove up to three injuries, and gains two Ticks of Hit Points for each Injury removed this way.
+  notes: The Injury Removal from this Feature counts as Natural Healing, and thus counts against the total number of Injuries that can be removed in a day.
+- name: Savage Strike
+  prerequisites:
+  - Taskmaster
+  frequency: At-Will
+  action_type: Extended Action
+  target: Your Pokémon with at least 2 Tutor Points
+  effect: The target loses 2 Tutor Points, and gains the Cruelty Ability.
+- name: Strike of the Whip
+  prerequisites:
+  - Taskmaster
+  - Press
+  frequency: At-Will
+  action_type: Swift Action
+  trigger: You use Press
+  effect: >-
+    You may apply 1 or more of the following effects to the Pokémon hit by Press:
+
+    Give the target 1 Injury and a Tick of Temporary Hit Points.
+
+    Spend 1 AP and cure the target of Confusion, Infatuation, Rage, and Suppression.
+
+    Use an [Order] you know with targets on the target as a Free Action.
+- name: Pain Resistance
+  prerequisites:
+  - Taskmaster
+  - Adept Intimidate
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: Your Pokémon with 1 or more injuries takes Damage
+  effect: Your Pokémon gains X Damage Reduction against the triggering attack, where X is its Tick Value multiplied by the number of Injuries it has. This may be triggered once per Scene per Pokémon.
+- name: Desperate Strike
+  prerequisites:
+  - Savage Strike
+  - Expert Intimidate
+  frequency: Scene x2
+  action_type: Free Action
+  trigger: Your Pokémon triggers Cruelty, or scores a Critical Hit with damaging attack.
+  effect: Your Pokemon may apply the effects of Cruelty to the attack without expending Cruelty’s Frequency. Cruelty’s effects may be purchased as if the foe had additional injuries equal to the number of injuries on the user. Desperate Strike may be used once per Scene per Pokémon.
+- name: Deadly Gambit
+  prerequisites:
+  - 5 Taskmaster Features
+  - Master Intimidate
+  frequency: Scene
+  action_type: Free Action
+  trigger: Your Pokémon is the target of a foe’s damaging melee attack
+  effect: The triggering attack automatically hits as if it was a Critical Hit. Before damage resolves, your Pokémon may use a 1-Target damaging attack on the foe making the triggering attack as an Interrupt, Frequency allowing, and also automatically hits as a Critical Hit. Damage for both attacks then resolve at the same time.
+  notes: This effect bypasses immunity to Critical Hits on your own Pokémon, but not on the target. Though both attacks hit automatically and are Critical Hits, you may still roll to activate effects.
+- name: Taskmaster
+  keywords:
+  - Class
+  prerequisites:
+  - Brutal Training
+  - Novice Intimidate
+  frequency: At-Will
+  action_type: Free Action
+  trigger: You apply Brutal Training as a Training action
+  effect: You may grant your Pokémon up to three injuries. If your Pokémon has at least one Injury, it becomes Hardened.
+- name: Stacked Deck
+  prerequisites:
+  - Trickster
+  - Adept Guile
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: Your Pokémon hits a foe suffering from a Status Affliction or one of the other conditions in the table below
+  effect: >-
+    Choose a Status Affliction or condition the triggering target is suffering from; the target suffers an additional effect according to the table below. Stacked Deck may only affect a foe once per Scene.
+
+    Condition
+
+    Effect
+
+    Bad Dreams, Cursed, Seeded, Burn, Poison
+
+    Whenever the target loses Hit Points from the chosen condition, they lose an additional 5 Hit Points.
+
+    Paralysis, Frozen, Vortex, Sleep
+
+    The next time the target passes their Save Check for the chosen condition, they become Tripped and Slowed.
+
+    Confuse, Enrage, Suppression, Infatuation
+
+    The target suffers a -2 penalty to their Accuracy and Evasion while suffering from the chosen condition.
+- name: Encore Performance
+  prerequisites:
+  - 3 Trickster Features
+  - Expert Guile
+  frequency: Daily x3
+  action_type: Free Action
+  trigger: Your Pokémon uses a Status-Class Move that does not target foes.
+  effect: >-
+    Your Pokémon gains +1 Combat Stage in any Stat in which they haven’t gained a Combat Stage this turn.
+
+    Your Pokémon gains a second Standard Action this round that must be used to make an At-Will action that does not trigger Encore Peformance.
+
+    If your Pokémon is placing Hazards, they may place an additional two units.
+
+    If your Pokémon is activating a Weather Effect, it lasts an additional two turns.
+
+    If your Pokémon is activating a Blessing, it gains an additional use.
+- name: Sleight
+  prerequisites:
+  - 4 Trickster Features
+  - Master Guile
+  frequency: Scene x2
+  action_type: Free Action
+  effect: Your Pokémon may activate Sleight as an Interrupt to immediately take their turn and use a Status-Class Move as a Standard Action. If this Move targets a foe, it ignores Substitute and Defensive Abilities, and Blessings may not be activated against the Move.
+- name: Trickster
+  keywords:
+  - Class
+  prerequisites:
+  - Novice Guile
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: Your Pokémon hits a foe with a Status-Class Move or a foe triggers your Pokémon’s Hazard
+  effect: After the Move is resolved, your Pokémon may perform a Dirty Trick or Manipulate Maneuver on that foe as a Free Action. The Maneuver automatically hits, but the target must be in range for the chosen Maneuver. Use your own Guile to resolve Manipulate Rolls.
+- name: Stat Link
+  keywords:
+  - BRANCH
+  prerequisites:
+  - Stat Ace
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: At the end of your Pokémon’s turn, their Chosen Stat is at its default number of Combat Stages or less.
+  effect: 'The triggering Pokémon has gains +1 Combat Stage in your Chosen Stat. (Note: The “Default” number of Combat Stages is usually 0)'
+- name: Stat Training
+  keywords:
+  - BRANCH
+  prerequisites:
+  - Stat Ace
+  frequency: At-Will
+  action_type: Extended Action
+  target: Your Pokémon with at least 1 Tutor Point
+  effect: >-
+    Your Pokémon loses 1 Tutor Point, and learns a Move based on your Chosen Stat, even if your Pokémon cannot normally learn this Move.
+
+    Attack: Swords Dance or Range
+
+    Defense: Iron Defense or Reflect
+
+    Special Attack: Nasty Plot or Hidden Power
+
+    Special Defense: Amnesia or Light Screen
+
+    Speed: Agility or After You
+- name: Stat Maneuver
+  keywords:
+  - BRANCH
+  prerequisites:
+  - Stat Ace
+  - Adept Command or Focus
+  frequency: Scene
+  action_type: Free Action
+  effect: >-
+    Stat Maneuver’s Effect depends on your Chosen Stat!
+
+    Attack Effect: You may activate this Feature to cause one of your Pokémon to use a Physical “Melee, 1-Target” Move as if its range was “Melee, Pass” or “Melee, 3-Targets” instead.
+
+    Defense Effect: You may activate this feature whenever your Pokémon is hit by a Physical Attack to receive the blow as if your Pokémon’s Defense Combat Stages were at +6 instead of its current value.
+
+    Special Attack Effect: You may activate this Feature to allow your Pokémon to use a Special Burst, Cone, Close Blast, Ranged Blast, or Line of any size as a Burst 1, Cone 2, Close Blast 2, or Line 4 instead.
+
+    Special Defense Effect: You may activate this feature whenever your Pokémon is hit by a Special Attack to receive the blow as if your Pokémon’s Special Defense CS were at +6 instead of its current value.
+
+    Speed Effect: You may activate this ability to cause your Pokémon to use a Priority Move as Priority (Advanced).
+- name: Stat Embodiment
+  keywords:
+  - BRANCH
+  prerequisites:
+  - 4 Stat Ace Features
+  - Expert Command or Focus
+  frequency: 1 AP
+  action_type: Swift Action, Priority (Limited)
+  target: Your Pokémon
+  effect: >-
+    Your Pokémon gains an Ability, based on your Chosen Stat, for the remainder of the Scene. Switching does not end this effect. Stat Embodiment may only grant one Ability to a Pokémon at a time. If it is used a second time on the same target, it replaces the first granted Ability.
+
+    Attack Aces give Sheer Force or Defiant
+
+    Defense Aces give Filter or Battle Armor
+
+    Special Attack Aces give Tinted Lens or Competitive
+
+    Special Defense Aces give Multiscale or Tolerance
+
+    Speed Aces give Speed Boost or Vanguard
+- name: Stat Stratagem
+  keywords:
+  - Branch
+  - Order
+  - Stratagem
+  prerequisites:
+  - Stat Link
+  - Stat Training
+  - Master Focus or Command
+  frequency: 2 AP
+  action_type: Standard Action
+  target: Your Pokémon
+  effect: >-
+    While this Feature is Bound, the target has the following bonuses based on your Chosen Stat:
+
+    Attack Effect: The target’s damaging Melee Attacks have their Critical Hit Range increased by 1 for each positive Combat Stage they have in Attack, up to a maximum of +3.
+
+    Defense Effect: The target gains a +2 bonus to Save Checks against Paralysis, Sleep, and Freeze for each positive Combat Stage they have in Defense, up to a maximum of +6.
+
+    Special Attack Effect: The target’s damaging Ranged Attacks have their Effect Range increased by 1 for each positive Combat Stage they have in Special Attack, up to a maximum of +3.
+
+    Special Defense Effect: The target gains a +2 bonus to Save Checks against Confusion, Rage, and Infatuation for each positive Combat Stage they have in Special Defense, up to a maximum of +6.
+
+    Speed Effect: The target’s Movement Capabilities are increased by 1 for each positive Combat Stage they have in Speed, up to a maximum of +3.
+- name: Style Flourish
+  keywords:
+  - BRANCH
+  prerequisites:
+  - 3 Style Expert Features
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: Your Pokémon uses a Move of your Chosen Type
+  effect: The target gains +1 CS in the Stat corresponding to your chosen Contest Type, after the Move and all effects have been resolved. This may only affect a target once per Scene.
+  notes: As a reminder, Beauty corresponds to Special Attack, Cool corresponds to Attack, Cute corresponds to Speed, Smart corresponds to Special Defense, and Tough corresponds to Defense.
+- name: Style Entrainment
+  keywords:
+  - BRANCH
+  prerequisites:
+  - 4 Style Expert Features
+  frequency: 1 AP
+  action_type: Swift Action, Priority (Limited)
+  target: Your Pokémon
+  effect: >-
+    Your Pokémon gains one of the following Abilities corresponding to your chosen Contest Stat for the rest of the Scene, even if it is switched out. Style Entrainment may only grant one Ability to a Pokémon at a time. If it is used a second time on the same target, it replaces the first granted Ability.
+
+    Beauty gives Gentle Vibe or Serene Grace
+
+    Cool gives Defiant or Sniper
+
+    Cute gives Cute Charm or Cute Tears
+
+    Smart gives Analytic or Anticipation
+
+    Tough gives Sturdy or Intimidate
+- name: Beautiful Ballet
+  keywords:
+  - RANKED 2
+  frequency: X AP
+  action_type: Special
+  effect: >-
+    Your Pokémon with at least 3d6 in their Beauty Stat from Poffins may activate Beautiful Ballet as a Standard Action to perform one of the following Moves. They must still follow frequency limits as usual for these Moves. X is the Rank of the chosen Move.
+
+    Rank 1: Captivate, Mist
+
+    Rank 2: Lovely Kiss, Mean Look
+- name: Fabulous Max
+  prerequisites:
+  - Beautiful Ballet Rank 1
+  frequency: At-Will
+  action_type: Free Action
+  trigger: Your Pokémon uses a Beauty-Type Move
+  effect: The move gains the keyword Burst 1 if Melee, or Blast 2 if ranged. If the move is already a Burst, Blast, or Cone, increase the size of the Move’s Range by 1. This does not cause a target to be hit multiple times. You may activate Fabulous Max only once per Pokémon per Scene.
+- name: Enticing Beauty
+  prerequisites:
+  - Beautiful Ballet Rank 1
+  frequency: Daily/10
+  action_type: Free Action
+  target: Your Pokémon
+  effect: The target acts as a Bait item as if it had the Alluring Capability. Add its number of Beauty Dice from Poffins as a Bonus to all d20 lure rolls.
+- name: Cool Conduct
+  keywords:
+  - RANKED 2
+  frequency: X AP
+  action_type: Special
+  effect: >-
+    Your Pokémon with at least 3d6 in their Cool Stat from Poffins may activate Cool Conduct as a Standard Action to perform one of the following Moves. They must still follow frequency limits as usual for these Moves. X is the Rank of the chosen Move.
+
+    Rank 1: Focus Energy, Noble Roar
+
+    Rank 2: Roar, Double Team
+- name: Rule of Cool
+  prerequisites:
+  - Cool Conduct Rank 1
+  frequency: At-Will
+  action_type: Free Action
+  trigger: Your Pokémon uses a Cool-Type Move
+  effect: The triggering Move’s Crit Range is increased by 3, and the Moves with the Priority or Interrupt Keywords may not be activated in reaction to this Move. You may activate Rule of Cool only once per Pokémon per Scene.
+- name: Action Hero Stunt
+  prerequisites:
+  - Cool Conduct Rank 1
+  frequency: Daily/10
+  action_type: Free Action
+  trigger: Your Pokémon makes a Skill Check for a dramatic, high risk action
+  effect: Instead of using a Skill for this Check, your Pokémon rolls their Cool Dice from Poffins and adds their number of Cool Dice from Stats as a modifier. For example, a Pokémon with 5d6 Cool from Poffins and 2d6 from Attack rolls 5d6+2. An example trigger is charging into a burning building for a heroic rescue. Skill Checks invoked by Intercepting attacks, Combat Maneuvers, Moves, and Abilities don’t trigger this Feature.
+- name: Cute Cuddle
+  keywords:
+  - RANKED 2
+  frequency: X AP
+  action_type: Special
+  effect: >-
+    Your Pokémon with at least 3d6 in their Cute Stat from Poffins may activate Cute Cuddle as a Standard Action to perform one of the following Moves. They must still follow frequency limits as usual for these Moves. X is the Rank of the chosen Move.
+
+    Rank 1: Charm, Block
+
+    Rank 2: Teeter Dance, Attract
+- name: Gleeful Steps
+  prerequisites:
+  - Cute Cuddle Rank 1
+  frequency: At-Will
+  action_type: Free Action
+  trigger: Your Pokémon uses a Cute-Type Move
+  effect: The triggering Pokémon may immediately shift up to half their Movement speed in meters in any direction after their attack is resolved. You may activate Gleeful Steps only once per Pokémon per Scene.
+- name: Let’s Be Friends!
+  prerequisites:
+  - Cute Cuddle Rank 1
+  frequency: Daily/5
+  action_type: Free Action
+  target: Your Pokémon
+  effect: The target may attempt to improve the disposition of a Wild Pokémon as if making a Charm Check. They roll their Cute Dice from Poffins and add their number of Cute Dice from Stats as a modifier. For example, a Pokémon with 4d6 Cute from Poffins and 3d6 Cute from Speed rolls 4d6+3 in place of a Charm Check.
+- name: Smart Scheme
+  keywords:
+  - RANKED 2
+  frequency: X AP
+  action_type: Special
+  effect: >-
+    Your Pokémon with at least 3d6 in their Smart Stat from Poffins may activate Smart Scheme as a Standard Action to perform one of the following Moves. They must still follow frequency limits as usual for these Moves. X is the Rank of the chosen Move.
+
+    Rank 1: Fake Tears, Calm Mind
+
+    Rank 2: Taunt, Flatter
+- name: Calculated Assault
+  prerequisites:
+  - Smart Scheme Rank 1
+  frequency: At-Will
+  action_type: Free Action
+  trigger: Your Pokémon uses a Smart-Type Move
+  effect: 'Choose one: The triggering Pokémon gains a +1 bonus on its Accuracy Roll for each ally that hit a target of its Move this round, or all allies get a +1 bonus to their Accuracy Rolls against targets of the triggering Pokémon’s Move until the end of your Pokémon’s next turn. You may activate Calculated Assault only once per Pokémon per Scene.'
+- name: Learn From Your Mistakes
+  prerequisites:
+  - Smart Scheme Rank 1
+  frequency: Daily/5
+  action_type: Free Action
+  trigger: Your Pokémon fails a Skill Check.
+  effect: Your Pokémon may re-roll the Skill Check with a Bonus equal to its number of Smart Dice from Poffins.
+- name: Tough Tumble
+  keywords:
+  - RANKED 2
+  frequency: X AP
+  action_type: Special
+  effect: >-
+    Your Pokémon with at least 3d6 in their Tough Stat from Poffins may activate Tough Tumble as a Standard Action to perform one of the following Moves. They must still follow frequency limits as usual for these Moves. X is the Rank of the chosen Move.
+
+    Rank 1: Scary Face, Spite
+
+    Rank 2: Glare, Bide
+- name: Macho Charge
+  prerequisites:
+  - Tough Tumble Rank 1
+  frequency: At-Will
+  action_type: Free Action
+  trigger: Your Pokémon uses a Tough-Type Move
+  effect: All targets hit by the Move are pushed away from the triggering Pokémon by 3 meters. You may activate Macho Charge only once per Pokémon per Scene.
+- name: Endurance
+  prerequisites:
+  - Tough Tumble Rank 1
+  frequency: Daily/10
+  action_type: Free Action
+  trigger: Your Pokémon takes falling damage, begins to suffocate, or is Heavily Injured.
+  effect: Your Pokémon can ignore up to X meters of falling when calculating falling damage, act without beginning to suffocate for X additional rounds, or ignore the Hit Point loss effects from acting while Heavily Injured for X rounds. X is equal to half its number of Tough Dice from Poffins.
+- name: Type Refresh
+  keywords:
+  - Branch
+  - Orders
+  prerequisites:
+  - Type Ace
+  frequency: 2 AP
+  action_type: Standard Action
+  target: Your Pokémon
+  effect: The target regains one use of a Scene-Frequency Move of your Chosen Type, and refreshes the Frequency of all EOT-Frequency Moves of your chosen Type. A Target can be affected by Type Refresh only once per Scene.
+- name: Move Sync
+  keywords:
+  - BRANCH
+  prerequisites:
+  - 3 Type Ace Features
+  frequency: At-Will
+  action_type: Extended Action
+  target: Your Pokémon with at least 1 Tutor Point.
+  effect: The target loses 1 Tutor Point. Pick a Move in the target’s Move List. The picked move is now permanently of your Chosen Type, and may have different effects. See the Types Changes page for more information and suggestions. A Pokémon may have only one Move-Sync’d Move in their Move List at a time; to Sync a new Move, the old Move must be forgotten.
+- name: Hits the Spot
+  prerequisites:
+  - Chef
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: You or your Pokémon trade in a Digestion Buff
+  effect: The target gains Temporary Hit Points equal to your Intuition Rank doubled. These Temporary Hit Points stack from any Temporary Hit Points granted by Accentuated Taste, the Digestion Buff or by the Lunchbox Ability.
+- name: Culinary Appreciation
+  prerequisites:
+  - Chef
+  frequency: At-Will
+  action_type: Extended Action
+  target: Your Pokémon with at least 2 Tutor Points remaining
+  effect: The target loses 2 Tutor Points and gains the Gluttony Ability.
+- name: Complex Aftertaste
+  prerequisites:
+  - Accentuated Taste
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: You or an ally trades in a Digestion Buff from an item with a Taste
+  effect: The target gains a Digestion Buff according to the Taste of the Snack granting the Buff. This Digestion Buff matches that of the corresponding basic Tasty Snack recipe.
+- name: Dumplings
+  prerequisites:
+  - 4 Chef Features
+  - Master Intuition
+  frequency: At-Will
+  action_type: Extended Action
+  effect: You mix the two ingredients into one Snack that has the same effect as its ingredients. The two ingredients must be different items.
+- name: Chef
+  keywords:
+  - CLASS
+  prerequisites:
+  - Basic Cooking
+  - Novice Intuition
+  frequency: At-Will
+  action_type: Extended Action
+  effect: You may use any Chef Recipe for which you qualify
+- name: Archive Tutor
+  prerequisites:
+  - Technique Archive
+  - Expert Perception
+  frequency: Daily
+  action_type: Extended Action
+  target: A Pokémon with 2 Tutor Points.
+  effect: 'Select a Record in your Technique Archive that is of a Move that the target can learn by Level Up, TM or by Move Tutor. The target learns the Move and loses 2 Tutor Points. You can target someone else’s Pokémon only once with Photo Tutor; you may target your own Pokémon any number of times with Photo Tutor, but they must still abide by any Move Pool Limitations (ie: no more than 3 of the user’s Move Pool can come from TMs or Tutor Moves).'
+- name: Targeted Profiling
+  keywords:
+  - ORDERS
+  prerequisites:
+  - Profile Archive
+  - Expert Perception
+  frequency: 2 AP
+  action_type: Standard Action
+  target: Your Pokémon
+  effect: Until the end of your next turn, the target acts as if they had the Mold Breaker Ability against all Pokémon and Trainers in your Profile Archive and gains a +2 bonus to Accuracy Rolls against these targets.
+- name: Cinematic Analysis
+  prerequisites:
+  - 4 Chronicler Features
+  - Master Perception
+  frequency: Daily x3
+  action_type: Free Action
+  effect: >-
+    You analyze a Record in one of your Archives. Cinematic Analysis’s effect depends on the Archive the Record is in. Each of these effects may only be used once per Scene.
+
+    Name
+
+    Archive
+
+    Effect
+
+    Character Study
+
+    Profile Archive
+
+    You may trigger Character Study when you or an ally makes a Charm, Command, Guile, Intimidate, or Intuition Check targeting the subject of your Record. Make a Perception Check and substitute the triggering Skill Check with the result.
+
+    Recreation
+
+    Technique Archive
+
+    Recreation may be triggered as your Pokémon gains Initiative. Select a Record of a Move in your Technique Archive that your Pokémon can learn by Level Up, TM, or Move Tutor. Your Pokémon may perform that Move as if it was on its Move List. You may select a specific Move only once per day.
+
+    Situational Awareness
+
+    Travel Archive
+
+    You may only use Situational Awareness if you analyze a Record of your current Location. When used this way, you may activate it as an Interrupt. Choose an ally; that ally may take their next action as an Interrupt.
+- name: Chronicler
+  keywords:
+  - CLASS
+  prerequisites:
+  - Novice Perception
+  frequency: 1 AP
+  action_type: Standard Action, Interrupt
+  target: A Pokémon, Trainer, Move, or Location.
+  effect: You take a Record of the target. Records can be placed in an Archive as an Extended Action. When you take Chronicler, you gain one Archive.
+- name: Dashing Makeover
+  prerequisites:
+  - Fashionista
+  frequency: Bind 2 AP
+  action_type: Extended Action
+  target: A Trainer or Pokémon
+  effect: 'When you activate Dashing Makeover, choose one Equipment or Held Item you can create. While this Feature is Bound, the target gains the effects of the chosen item, as long as they would normally be able to equip it (ex: Trainers cannot equip Incense Items).They do not need to take up an Equipment or Held Item slot to gain this benefit. A target may only be affected by one instance of Dashing Makeover at a time.'
+- name: Style is Eternal
+  prerequisites:
+  - Fashionista
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: Your Pokémon is Disarmed or would have their Held Item removed by another effect such as Thief or Covet
+  effect: Your Pokémon instead retains their Held Item. Style is Eternal may only be used once per Scene per Pokémon.
+- name: Versatile Wardrobe
+  prerequisites:
+  - Fashionista
+  - two Fashionista Skills at Adept
+  frequency: At-Will
+  action_type: Extended Action
+  target: Your Pokémon with at least 2 Tutor Points remaining
+  effect: >-
+    The target loses 2 Tutor Points and then becomes chic. Chic Pokémon gain two extra Held Item slots with which they can carry Held Items. However, the items in these slots have no effect and are not treated as equipped. As a Swift Action on their turn, Chic Pokémon may swap a currently active Held Item with an item stored in these slots. Chic Pokémon may not carry multiple items
+
+    of the same type or with repeated effects.
+  notes: A Chic Pokémon does not become Suppressed until they switch a Choice Item into their active Held Item slot, but even if they then switch the Choice Item out, they remain Suppressed for the remainder of combat. A Mega-Evolved Chic Pokémon remains Mega-Evolved even if they switch their active Held Item.
+- name: Dress to Impress
+  keywords:
+  - Orders
+  prerequisites:
+  - Versatile Wardrobe
+  - two Fashionista Skills at Expert
+  frequency: Scene x2
+  action_type: Standard Action
+  target: Your Chic Pokémon
+  effect: Your Pokémon gains the effect of all items in extra slots granted by Versatile Wardrobe for one full round. Dress to Impress may only target a Pokémon once per Scene.
+- name: Fashionista
+  keywords:
+  - CLASS
+  prerequisites:
+  - Two of Charm
+  - Command
+  - Guile
+  - Intimidate
+  - or Intuition at Novice
+  frequency: At-Will
+  action_type: Extended Action
+  effect: >-
+    You may craft any Fashionista Recipe for which you qualify.
+
+    Special: When you take Fashionista, choose two of Charm, Command, Guile, Intimidate, or Intuition to become your Fashionista Skills. The Skills you choose must be at Novice Rank or higher.
+- name: Natural Fighter
+  keywords:
+  - +HP
+  prerequisites:
+  - Survivalist
+  frequency: 1 AP
+  action_type: Special
+  effect: >-
+    You and your Pokémon become adept at using the environment to your advantage in battle. You or your Pokémon may activate Natural Fighter as a Standard Action to use the Move below corresponding to the current terrain. You and your Pokémon must still follow all Frequency limitations for the Move.
+
+    Grassland: Cotton Spore
+
+    Forest: Grass Whistle
+
+    Wetlands: Mud Slap
+
+    Ocean: Aqua Ring
+
+    Tundra: Haze
+
+    Mountain: Smack Down
+
+    Cave: Astonish
+
+    Urban: Fling
+
+    Desert: Sand Attack
+  notes: GMs! Don’t be super duper strict about the terrains here. Obviously a beach is analogous enough to a desert to use Sand Attack, and a lake can count as ocean terrain. In urban terrain, there’ll probably at least be trash around to Fling with the standard 6 DB option. On the other hand, most standard arenas for League matches won’t qualify for any of the terrains. However, some arenas may be specifically designed to emulate a terrain type, such as a rocky stadium or a set of floating platforms in a pool.
+- name: Trapper
+  keywords:
+  - +HP
+  prerequisites:
+  - Survivalist
+  - Adept Survival
+  frequency: Abrasion Trap
+  action_type: 'Mountain, Cave, or Urban: A foe that runs into this Hazard lowers their Defense and Special Defense by 1 Combat Stage.'
+  effect: You create a consumable item that creates 8 meters of Hazard within 6 meters. All 8 meters must be adjacent with at least one other space of the Hazard. These Hazards cause foes that run into them to become Slowed until the end of their next turn and have an additional effect based on the terrain in which the item was made. When foes run into these Hazards, they are destroyed after their effects resolve. Pokémon and Trainers with Naturewalk for the terrains associated with a Hazard are immune to its effects. These items must be used the same day they are created or they lose all effect.
+- name: Wilderness Guide
+  keywords:
+  - +HP
+  - Orders
+  prerequisites:
+  - Survivalist
+  - Expert Survival
+  frequency: Scene x3
+  action_type: Standard Action
+  effect: >-
+    Wilderness Guide’s effect depends on your current terrain.
+
+    Grassland or Forest: All allies gain the Stealth Capability and a +2 bonus to their Overland Speed for one full round.
+
+    Ocean or Wetlands: All allies gain 5 Damage Reduction and a +2 bonus to their Swim Speed for one full round.
+
+    Desert or Tundra: All allies do not lose Hit Points from Weather and ignore the effects of foes’ Sand Veil and Snow Cloak Abilities for one full round.
+
+    Mountain or Cave: All allies do not trigger Hazards and are not Blinded in Low-Light conditions for one full round.
+
+    Urban: All allies gain +1 Evasion and a +2 bonus on Accuracy Rolls and Skill Checks to perform the Dirty Trick and Manipulate Combat Maneuvers for one full round.
+- name: Adaptive Geography
+  keywords:
+  - +HP
+  prerequisites:
+  - 4 Survivalist Features
+  - Master Survival
+  frequency: Scene x2
+  action_type: Free Action
+  trigger: You or your Pokémon gain Initiative
+  effect: The triggering target takes their turn as if they were in a terrain adjacent to the terrain they are in on the following graphic. For example, if you are standing in Wetlands terrain, you may act as if you are standing in Forest or Ocean Terrain. This affects Survivalist Features, Naturewalk Capabilities, Moves with the Environ Keyword, etc.
+- name: Survivalist
+  keywords:
+  - Class
+  - +HP
+  prerequisites:
+  - Novice Survival
+  effect: >-
+    Choose a Terrain in which you have spent at least three nights. You gain Naturewalk for that terrain and a +2 bonus to Athletics, Acrobatics, Stealth, Perception, and Survival Checks in that terrain. When you have 2 Survivalist Features, you may choose a second Terrain. When you have 4 Survivalist Features, you may choose a third terrain. When you have 6 Survivalist Features, you may choose a fourth terrain.
+
+    The terrains are: Grassland, Forest, Wetlands, Ocean, Tundra, Mountain, Cave, Urban, Desert
+- name: Coaching
+  keywords:
+  - +HP
+  prerequisites:
+  - Training Regime
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: Your Pokémon makes a Combat Maneuver
+  effect: >-
+    Your Pokémon gains a bonus based on the type of Combat maneuver they are making. This Feature may be triggered once per Scene per Pokémon.
+
+    Your Pokémon gains a +1d6 bonus to Opposed Acrobatics, Athletics, Combat, or Stealth Skill Checks.
+
+    If your Pokémon was Sprinting, they double their Movement Capabilities instead of increasing by 50%.
+
+    If your Pokémon was making an Attack of Opportunity, they automatically hit.
+
+    You may also activate this Feature to let them Intercept for any Ally regardless of Loyalty, and they automatically succeed on the Skill Check to do so.
+- name: Adrenaline Rush
+  keywords:
+  - +HP
+  prerequisites:
+  - Athlete
+  - Expert Athletics
+  frequency: Daily x3
+  action_type: Free Action
+  trigger: You are lowered to half or your Maximum Hit Points or less
+  effect: You gain +1 Combat Stage in each of your Trained Stats, are cured of up to two Status Afflictions, and gain a Tick of Temporary Hit Points. Adrenaline Rush may be used only once per Scene
+- name: Athlete
+  keywords:
+  - CLASS
+  - +HP
+  prerequisites:
+  - Agility Training
+  - Novice Athletics
+  - One of Athletic Prowess
+  - Mounted Prowess
+  - Power Boost
+  - Stamina
+  - or Swimmer
+  frequency: At-Will
+  action_type: Extended Action
+  effect: After an hour of exercise, an Athlete may choose two different Stats besides HP; both of those stats become Trained Stats. The default State of Trained Stats is +1 Combat Stages instead of 0. An Athlete may have two Trained Stats at a time.
+- name: Dance Practice
+  keywords:
+  - +Speed
+  prerequisites:
+  - Dancer
+  frequency: At-Will
+  action_type: Extended Action
+  target: 'Your Pokémon with at least 2 Tutor Points Effect: The target loses 2 Tutor Points and gains your choice of Spinning Dance or Own Tempo. Dance Practice may target a Pokémon only once.'
+  effect: ''
+- name: Choreographer
+  keywords:
+  - +Speed
+  prerequisites:
+  - Dance Form; Adept Acrobatics
+  - Athletics
+  - or Charm
+  frequency: At-Will
+  action_type: Extended Action
+  target: Your Pokémon with at least 2 Tutor Points
+  effect: The target loses 2 Tutor Point and learns a Dance Move created by yourself. Choreographer may target a Pokémon multiple times.
+- name: Power Pirouette
+  keywords:
+  - +Speed
+  prerequisites:
+  - Dance Form; Expert Acrobatics
+  - Athletics
+  - or Charm
+  frequency: Scene x2
+  action_type: Swift Action
+  trigger: You perform a Dance Move
+  effect: >-
+    Choose one effect:
+
+    All adjacent targets are Confused.
+
+    You gain +1 Combat Stage to a Stat of your choice not raised by the triggering Move.
+
+    Destroy all Hazards within 5 meters, and remove Leech Seed, Trapped, and Stuck from yourself.
+- name: Passing Waltz
+  keywords:
+  - +Speed
+  prerequisites:
+  - Dance Practice; Master Acrobatics
+  - Athletics
+  - or Charm
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: You or one of your Pokémon with Own Tempo or Spinning Dance uses a Dance Move
+  effect: Choose an ally within 3 meters of the triggering target. That ally gains Combat Stages from the triggering Move instead of the user.
+- name: Pack Tactics
+  keywords:
+  - +SPEED
+  prerequisites:
+  - Hunter
+  frequency: At-Will
+  action_type: Extended Action
+  target: A Pokémon with at least 2 Tutor Points
+  effect: The target loses 2 Tutor Points, and gains the Pack Hunt or Teamwork Ability. You may target a Pokémon with Pack Tactics only once.
+- name: Surprise!
+  keywords:
+  - +Speed
+  prerequisites:
+  - Hunter
+  - Adept Stealth or Survival
+  frequency: X AP
+  action_type: Swift Action
+  trigger: You make an attack against a foe that does not anticipate an attack or is adjacent to your Pokémon with Pack Hunt or Teamwork
+  effect: Make two attack rolls for the triggering action, and use the better result to finalize the attack. If both attacks would hit, the target is Flinched. Surprise! may be used only once per Scene per target. If the triggering attack was a Poké Ball, Hand Net, Weighted Net, Glue Cannon, or Struggle Attack, Surprise! costs 1 AP to activate; otherwise, it costs 2 AP.
+- name: Don’t Look Away
+  keywords:
+  - +SPEED
+  prerequisites:
+  - Pack Tactics
+  - Adept Stealth
+  - Adept Survival
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: You or your Pokémon with Pack Hunt or Teamwork hits with an Attack of Opportunity
+  effect: The hit foe loses a Tick of Hit Points, and is Slowed for 1 round. Don’t Look Away may be triggered once per round.
+- name: My Kung-Fu is Stronger
+  prerequisites:
+  - Martial Training Rank 1
+  frequency: At-Will
+  action_type: Free Action
+  trigger: A foe provokes an Attack of Opportunity
+  effect: You may use Rock Smash instead of an unarmed Struggle Attack. If you do, Rock Smash’s Effect Range is increased by +2.
+- name: Second Strike
+  prerequisites:
+  - Martial Artist
+  frequency: At-Will
+  action_type: Free Action
+  trigger: You attempt to use a Grapple, Push, Trip, or Disarm Combat Maneuver but fail the Opposed Roll
+  effect: You may immediately use Rock Smash or a Struggle Attack against your target as a Free Action.
+- name: Power Chord
+  prerequisites:
+  - Noise Complaint
+  - Master Charm or Focus
+  frequency: Scene x2
+  action_type: Free Action
+  trigger: You play a Song
+  effect: Make a Charm or Focus Check, and add your Special Attack. Foes in the area of effect take Special Normal-Type Damage equal to the result.
+- name: Quick Wit
+  keywords:
+  - +Speed
+  prerequisites:
+  - Provocateur
+  - a Provocateur Skill at Adept Rank.
+  frequency: Scene x3
+  action_type: Swift Action
+  effect: You may make a Manipulate Maneuver or use a Social Move you know, Frequency allowing.
+- name: Play Them Like a Fiddle
+  keywords:
+  - +Speed
+  prerequisites:
+  - Powerful Motivator
+  - a Provocateur Skill at Expert Rank.
+  frequency: Scene x3
+  action_type: Swift Action
+  trigger: You hit with Leer, Confide, Baby-Doll Eyes, or a Provocateur Move
+  effect: >-
+    The Move gains additional effects as listed below. You may use the effects of each Move only once per Scene.
+
+    Baby-Doll Eyes: The target becomes Infatuated with you for the rest of the Scene, and cannot be cured of this condition by any means, including Taking a Breather. This does not bypass immunity to Infatuation.
+
+    Confide: You choose a Move the target has used this Scene. That Move becomes Disabled for the target. » Leer: The target’s Defense is lowered an additional Combat Stage, and their Special Defense is lowered by 2 Combat Stages.
+
+    Sweet Kiss: While the target is Confused, they may not perform Disengage Maneuvers, and whenever they hit themselves in Confusion, they provoke an Attack of Opportunity from all of their adjacent foes.
+
+    Taunt: For 1 full round, the next damaging attack to hit the target of Taunt deals +3d8+10 Damage.
+
+    Torment: The target’s Ability is disabled until the end of the encounter. If the target has more than one Ability, you choose one of them to disable.
+
+    Lovely Kiss: The target’s Evasion is lowered by 2 for the rest of the Scene.
+- name: Enchanting Gaze
+  keywords:
+  - +Speed
+  prerequisites:
+  - Quick Wit
+  - two Provocateur Skills at Expert Rank.
+  frequency: 2 AP
+  action_type: Standard Action
+  effect: Choose a Manipulate Maneuver effect; apply that Effect to all foes in a Cone 2. This ignores Frequency Limitations with that Maneuver and automatically succeeds against all targets without an opposed roll.
+- name: Dirty Fighting
+  keywords:
+  - +Attack
+  prerequisites:
+  - Rogue
+  - a Rogue Skill at Adept Rank
+  frequency: 1 AP
+  action_type: Swift Action
+  trigger: You hit a foe with Weapon Attack
+  effect: After the attack is Resolved, you may immediately use the Dirty Trick Maneuver if the target is within range. You automatically hit with Dirty Trick, but must still make an Opposed Roll.
+- name: Scoundrel’s Strike
+  keywords:
+  - +Attack
+  prerequisites:
+  - Underhanded Tactics
+  - Street Fighter
+  frequency: Daily x3
+  action_type: Swift Action
+  trigger: You hit with a Rogue Move
+  effect: >-
+    The target loses Hit Points equal to your highest Rogue Skill Rank doubled, and an additional effect based on whether you have the Ambush or Cruelty Ability. You may use Scoundrel’s Strike only once per Scene per target.
+
+    Ambush: For 1 Full Round, the target is Slowed, cannot make Attacks of Opportunity, and takes a -2 penalty to all rolls.
+
+    Cruelty: For 1 Full Round, the target loses 5 Hit Points upon being hit by any damaging attack.
+- name: Menace
+  keywords:
+  - +Defense
+  prerequisites:
+  - Roughneck
+  frequency: At-Will
+  action_type: Swift Action
+  trigger: You hit a foe with the Terrorize Manipulation
+  effect: Until their next turn, the target has their Initiative lowered to 0. For one full round, attacks against them cause them to Flinch on 17+ or have their existing Flinch Range increased by +4.
+- name: Mettle
+  keywords:
+  - +Defense
+  prerequisites:
+  - Roughneck
+  frequency: Scene x2
+  action_type: Free Action
+  target: You take Massive Damage or Intercept a Damaging Attack.
+  effect: Resolve Damage as if the triggering attack was resisted one step. The triggering foe then loses 2 Combat Stages in the Attack Stat used by the triggering Attack.
+- name: Fearsome Display
+  keywords:
+  - +Defense
+  prerequisites:
+  - Malice
+  frequency: 2 AP
+  action_type: Swift Action
+  trigger: You use Leer or a Roughneck Move
+  effect: >-
+    The Move gains additional effects.
+
+    Leer: Attacks against affected foes gain a +2 Bonus to their Critical Range for one full round.
+
+    Chip Away: The target is considered Vulnerable against this attack.
+
+    Headbutt: The target has their Initiative set to 0 until the end of their next turn.
+
+    Glare: The target loses 2 Speed Combat Stages. This occurs whether Glare hits or misses.
+
+    Mean Look: The target is Suppressed.
+
+    Endure: You gain two Ticks of Temporary Hit Points.
+
+    Slack Off: You are cured of one Status Affliction.
+- name: Roughneck
+  keywords:
+  - Class
+  - +Defense
+  prerequisites:
+  - Novice Athletics
+  - Intimidating Presence
+  frequency: 1 AP
+  action_type: Swift Action
+  trigger: You hit a foe with an Attack
+  effect: The foe loses a Combat Stage in the Stat of your choice.
+- name: Quick Gymnastics
+  keywords:
+  - +Speed
+  prerequisites:
+  - Tumbler
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: You hit with an Attack; you make a Jump; or you stand up from being Tripped
+  effect: You may may Shift 2 Meters. You don’t count as Flanked or trigger Attacks of Opportunity until the end of your next turn. Additionally, if you activate this Feature, the triggering action does not provoke Attacks of Opportunity.
+- name: Burst of Speed
+  keywords:
+  - +Speed
+  prerequisites:
+  - 5 Tumbler Features
+  - Master Acrobatics
+  frequency: Scene
+  action_type: Free Action
+  trigger: You end your turn
+  effect: Select an Initiative Count equal to half of your own Initiative or less; you may take an extra turn at that point in the round.
+- name: Aura Reader
+  keywords:
+  - +Attack or Special Attack
+  prerequisites:
+  - Aura Guardian
+  frequency: 2 AP
+  action_type: Swift Action
+  effect: You gain the Aura Reader Capability for the rest of the scene. If your Intuition is Adept Rank or higher, you also gain the Aura Pulse Capability.
+- name: Sword of Body and Soul
+  keywords:
+  - +Attack or Special Attack
+  prerequisites:
+  - Aura Guardian
+  - Adept Intuition
+  frequency: 2 AP
+  action_type: Swift Action
+  trigger: You use a damaging Aura Guardian Move against an adjacent foe
+  effect: You may have the triggering Move deal damage as if it was your choice of Physical or Special Classes. Regardless, add both your Attack and Special Attack Stats to the Damage Roll, and this attack ignores Damage Reduction. This does not stack with Twisted Power.
+- name: Ambient Aura
+  keywords:
+  - +Attack or Special Attack
+  prerequisites:
+  - Aura Reader
+  - Expert Intuition
+  frequency: Scene x2
+  action_type: Swift Action
+  trigger: You use a Move with the Aura keyword
+  effect: >-
+    You gain an Aura Blessing that can be spent any time as a Free Action Interrupt. When you spend an Aura Blessing, you choose one of the effects below. You may only have one Aura Blessing at a time, and you must have the Aura Pulse Capability to use Ambient Aura.
+
+    You create an energy barrier around you or an ally within 5 meters granting Damage Reduction equal to your Intuition Rank tripled until the end of your next turn.
+
+    You cure yourself of a Volatile Status Affliction.
+
+    Gain the Blindsense Capability until the end of the Scene.
+- name: Shared Senses
+  prerequisites:
+  - Channeler
+  frequency: Bind 1 AP
+  action_type: Swift Action
+  target: A Channeled Pokémon
+  effect: You Imprint the target for the duration of this Feature. You receive all sensory information being sensed by Imprinted Pokémon, and Imprinted Pokémon are not subject to the distance limit on Channeling. If you have Imprinted more than one Pokémon, you may only concentrate on the senses of one Pokémon at a time, and only choose one such Pokémon per round. If you stop Channeling a Pokémon, they are no longer Imprinted as well.
+- name: Battle Synchronization
+  keywords:
+  - Orders
+  prerequisites:
+  - Channeler
+  frequency: Scene x3
+  action_type: Standard Action
+  effect: For one full round, whenever a Channeled Pokémon successfully hits a foe, all Channeled Pokémon gain +1 Accuracy and +1 Evasion against that foe for the duration of this Feature.
+- name: Spirit Boost
+  keywords:
+  - Orders
+  - Stratagem
+  prerequisites:
+  - Channeler
+  frequency: Bind 2 AP
+  action_type: Standard Action
+  target: A Channeled Pokémon
+  effect: >-
+    When you use Spirit Boost, choose a Channeled Pokémon. You may choose the target of Spirit Boost if you wish. While Spirit Boost is Bound, the target has one of the following effects, depending on the highest Combat Stat of the chosen Pokémon. (In the event of a tie, you choose which Stat to use)
+
+    Attack: The target gains Bonus Damage when using Physical attacks equal to your Intuition Rank.
+
+    Defense: The target gains Damage Reduction against Physical attacks equal to your Intuition Rank.
+
+    Special Attack: The target gains gain Bonus Damage when using Special attacks equal to your Intuition Rank.
+
+    Special Defense: The target gains Damage Reduction against Special attacks equal to your Intuition Rank.
+
+    Speed: The target gains a bonus to their Initiative equal to your Intuition Rank.
+- name: Power Conduit
+  prerequisites:
+  - Channeler
+  - Adept Intuition
+  frequency: 2 AP
+  action_type: Swift Action
+  target: Channeled Pokémon
+  effect: >-
+    Trade all Combat Stages for a single Stat between two Channeled Pokémon
+
+    Transfer a Coat from one Channeled Pokémon to another.
+
+    Give up a use of Scene or Daily Move from one willing Channeled Pokémon to regain use of a Scene Move which another Channeled Pokémon has used. This effect may only refresh a Move for each Pokémon once per Scene.
+- name: Pain Dampening
+  prerequisites:
+  - Channeler
+  - Expert Intuition
+  frequency: Scene x2
+  action_type: Free Action
+  trigger: A Channeled Pokémon would be Fainted by a damaging attack
+  effect: Choose any number of Channeled Pokémon, which must include the triggering Pokémon. Instead of resolving the attack normally, divide the damage from the attack by the number of chosen Pokémon. Each chosen Pokémon then loses that many Hit Points. For each chosen Pokémon that Resists or is Immune to the Type of the triggering attack, subtract your Intuition Rank from the damage of the attack before all calculations.
+- name: Soothing Connection
+  prerequisites:
+  - Pain Dampening
+  - Master Intuition
+  frequency: Daily x2
+  action_type: Standard Action
+  target: Channeled Pokémon
+  effect: Distribute 5 points in any way among Pokémon you are Channeling. For each point you assign to a Channeled Pokémon, they gain a Tick of Hit Points.
+- name: Channeler
+  keywords:
+  - Class
+  prerequisites:
+  - Mystic Senses
+  frequency: At-Will
+  action_type: Swift Action
+  target: A Pokémon.
+  effect: You Channel the target Pokémon. If you attempt to Channel a Hostile Pokémon, you must make an Intuition Check with a DC of 15 to Channel the target. You may stop Channeling a Pokémon as a Free Action at any time. You may Channel a number of Pokémon at a time up to your Intuition Rank. If a Channeled Pokémon goes further than 20 meters from you, they stop being Channeled.
+- name: Diffuse Pain
+  keywords:
+  - +HP
+  prerequisites:
+  - Hex Maniac Studies Rank 1
+  frequency: 2 AP
+  action_type: Swift Action
+  trigger: You use a Status-Class Move gained from Hex Maniac Studies
+  effect: Choose an additional target for the Move.
+- name: Malediction
+  keywords:
+  - +HP
+  prerequisites:
+  - Hex Maniac Studies Rank 1
+  - Expert Occult Education
+  frequency: Scene x2
+  action_type: Free Action
+  trigger: A foe within 5 meters misses all targets with an attack
+  effect: Use a Status-Class Move gained from Hex Maniac Studies targeting the triggering foe as a Free Action, Frequency-permitting.
+- name: Grand Hex
+  keywords:
+  - +HP
+  prerequisites:
+  - Hex Maniac Studies Rank 3
+  - Master Occult Education
+  frequency: 1 AP
+  action_type: Swift Action
+  trigger: You hit a foe with Hex
+  effect: Regain one use of a Move gained from Hex Maniac Studies that can inflict a Status Affliction that the triggering target has. If you activated the conditional damage boost for Hex, its Frequency is not expended. You may only activate Grand Hex once per target per Scene.
+- name: Ninja’s Arsenal
+  prerequisites:
+  - Ninja
+  frequency: At-Will
+  action_type: Extended Action
+  effect: You may craft an Antidote, Smoke Ball, Caltrops, or Toxic Caltrops for  100.
+- name: Poison Weapons
+  keywords:
+  - +Speed
+  - Weapon
+  prerequisites:
+  - Ninja
+  - Adept Stealth
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: You make a Weapon Attack.
+  effect: The attack or Move Poisons its targets on 16+, and you may have it deal Poison-Type Damage if you wish.
+- name: Genjutsu
+  keywords:
+  - +Speed
+  prerequisites:
+  - Ninja
+  - Adept Stealth
+  frequency: At-Will
+  action_type: Standard Action
+  effect: You form an Illusion around yourself. This Illusion may be used to hide yourself in a shroud of darkness if in darkness, or to make yourself look like a mundane object (such as a crate, potted plant, or similar). The Illusion can even fool Aura, concealing you from Aura Sight for its duration. However, the Illusion requires complete concentration, and is broken if you take any actions at all. Anyone that interacts with the Illusion directly may make an Occult Education or Intuition Check with a DC equal to 10 plus your Stealth Rank; if they succeed, the Illusion is broken.
+- name: Utility Drop
+  keywords:
+  - +Speed
+  prerequisites:
+  - Ninja’s Arsenal
+  - Expert Stealth
+  frequency: At-Will
+  action_type: Swift Action
+  trigger: You Shift
+  effect: You may use a Smoke Ball, Caltrops, or Toxic Caltrops as a Free action during your Shift. Instead of the Move’s usual area of effect, you leave one square of Smokescreen, Spikes, or Toxic Spikes on each square you leave as you Shift. Once you place 8 meters of Smoke, Spikes, or Toxic Spikes you may not place any more.
+- name: Divination
+  keywords:
+  - +Special Defense
+  prerequisites:
+  - Oracle
+  frequency: Daily x3
+  action_type: Extended Action
+  target: An item you are touching, or your current location
+  effect: >-
+    You may perform an Augury or Scrying.
+
+    Augury
+
+    Effect: The user has a vision, dream, or similar that may depict past, present, or future events. The clarity of the dream may vary, as well as the user’s ability to remember it. See the bottom section for more details.
+
+    Scrying
+
+    Effect: You see visions of what has happened to the target over the last 24 hours. The images may be jumbled or unclear, to the discretion of your GM. See the bottom section for more details.
+- name: Small Prophecies
+  keywords:
+  - +Special Defense
+  prerequisites:
+  - Divination
+  - Adept Perception
+  frequency: 1 AP
+  action_type: Swift Action
+  effect: Roll 1d20 and note the result. Until the end of your next turn, you may choose to replace a single d20 roll you or a willing ally makes with the noted result.
+- name: Mark of Vision
+  keywords:
+  - +Special Defense
+  prerequisites:
+  - Oracle
+  - Adept Perception
+  frequency: Bind 1 AP
+  action_type: Extended Action
+  target: A willing Trainer
+  effect: You mark the target with a mystical power which allows you to close your eyes and focus to perceive the world with their senses from their perspective. You may Bind this Ability multiple times, each time on a different target, but you may only concentrate on one Mark of Vision at a time, and you may only have a number of Marks at one time equal to half your Perception Rank. A target may choose to end this effect at any time, or to deny you access to their senses temporarily without ending the effect entirely. You have a rough sense of how far away and in what direction
+- name: Prescience
+  keywords:
+  - +Special Defense
+  prerequisites:
+  - Unveiled Sight
+  - Master Perception
+  frequency: Scene
+  action_type: Free Action
+  trigger: You are hit by an attack
+  effect: The attack instead misses.
+- name: Sage’s Benediction
+  keywords:
+  - +HP
+  prerequisites:
+  - Sacred Shield or Mystic Defense
+  - Adept Occult Education
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: An ally activates one of your Moves with the Blessing Keyword.
+  effect: >-
+    The triggering ally gains an additional benefit as follows, depending on the Move used. The benefit takes effect after the Blessing and the attack that triggered it are resolved.
+
+    Reflect: +1 Defense Combat Stage
+
+    Light Screen: +1 Sp. Defense Combat Stage
+
+    Safeguard: +1 Evasion
+
+    Lucky Chant: +1 Accuracy
+- name: Highly Responsive to Prayers
+  keywords:
+  - +HP
+  prerequisites:
+  - Lay on Hands
+  frequency: Scene x3
+  action_type: Free Action
+  trigger: You use the Blessed Touch or Healer Ability on an ally, or an ally receives an Injury
+  effect: You may use the Sage Feature as a Free Action targeting the triggering ally. Multiple instances of Sage’s effect that you use may stack when used this way.
+- name: Divine Wind
+  keywords:
+  - +HP
+  prerequisites:
+  - Sage’s Benediction
+  - Master Occult Education
+  frequency: 2 AP
+  action_type: Free Action, Interrupt
+  target: Blessings you generated with a Sage Move
+  effect: Choose a type of Blessing you can generate with a Sage Move. All Blessings you generated of another type become Blessings of the chosen type. This may not be used to generate more uses of a Blessing than the original Move creates. For example, three Lucky Chant Blessings would become two Reflect or Light Screen Blessings, not three. You may only choose a Blessing type once per Scene.
+- name: Sage
+  keywords:
+  - Class
+  - +HP
+  prerequisites:
+  - Novice Occult Education
+  frequency: At-Will
+  action_type: Standard Action
+  target: An ally within 5 meters
+  effect: The target gains Damage Reduction equal to your Occult Education Rank doubled or their Tick Value, whichever is higher, for one full round.
+  notes: Multiple uses of Sage from different Trainers do not stack on one target.
+- name: PK Combat
+  keywords:
+  - +Special Attack
+  - Weapon
+  prerequisites:
+  - Telekinetic
+  - Adept Focus
+  frequency: Bind 1 AP
+  action_type: Standard Action
+  effect: You may also wield weapons and items with your Telekinesis capability, as long as you are able to lift them. This means you may use Items and Melee Weapons that normally require you to be adjacent to your target at a range limited only by your Telekinesis. When wielding Weapons with your Telekinesis, you qualify for Moves using Focus instead of Combat and may add your Special Attack instead of your Attack Stat. The Attacks remain Physical, however.
+- name: Telekinetic Burst
+  keywords:
+  - +Special Attack
+  prerequisites:
+  - PK Combat
+  - Expert Focus
+  frequency: 1 AP
+  action_type: Swift Action
+  effect: You perform a Disarm, Trip, or Push Maneuver using your Telekinetic Capability.
+- name: Psionic Overload
+  keywords:
+  - +Special Attack
+  prerequisites:
+  - PK Omega
+  - Master Focus
+  frequency: 2 AP
+  action_type: Swift Action
+  trigger: You hit with Psychic or use another Telekinetic Move
+  effect: >-
+    The effect of this Feature depends on the Triggering Move.
+
+    Kinesis: The user of the triggering attack becomes Confused.
+
+    Barrier: Place 2 additional segments of Barrier, and you may place the Barriers anywhere within 6 meters of yourself. They do not need to remain contiguous, nor does one segment have to touch you.
+
+    Psychic: The target becomes Vulnerable for one full round.
+
+    Telekinesis: At the end of each turn that the target remains Lifted, they lose a Tick of Hit Points.
+- name: Thought Detection
+  keywords:
+  - +Special Defense
+  prerequisites:
+  - Telepathic Awareness
+  frequency: Scene
+  action_type: Standard Action
+  effect: You become aware of the number of living Humans or Pokémon within X meters of yourself; X is equal to your Focus Rank tripled. Pokémon or Trainers with the Mindlock Capability are not detected by this Ability. You may only use Thought Detection as long as you have the Telepathy Capability.
+- name: Telepathic Warning
+  keywords:
+  - +Special Defense
+  prerequisites:
+  - Telepathic Awareness
+  - Expert Focus or Intuition
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: You or an Ally use an Attack
+  effect: You’re able to give your allies heed of attacks. All allies that would be hit by the attack may take a Shift Action as an Interrupt to move out of the area of effect of the attack. Using this leaves discoverable Psychic Residue on each affected ally. You may only use Telepathic Warning as long as you have the Telepath Capability.
+- name: Suggestion
+  keywords:
+  - +Special Defense
+  prerequisites:
+  - Honed Mind
+  - Master Focus or Intuition
+  frequency: Bind 1 AP
+  action_type: Standard Action
+  target: Pokémon or Trainers
+  effect: You smoothly plant a thought into the subject’s head that lasts as long as this Feature is Bound. They won’t know exactly why or how they thought of it; they will naturally assume they thought of it themselves, and their brain will attempt to get there as logically as it can. The target may not necessarily act on the Suggestion, especially if it is against their nature. Using Suggestion to plant a specific thought may cause the target to think about a specific subject, dredging up surface thoughts related to the matter. Using this on a target leaves discoverable psychic residue. You may only use Suggestion as long as you have the Telepathy Capability, though you may keep it Bound without having Telepathy active.
+- name: Telepath
+  keywords:
+  - Class
+  - +Special Defense
+  prerequisites:
+  - Elemental Connection (Psychic)
+  - Iron Mind
+  - Novice Intuition
+  frequency: 2 AP
+  action_type: Swift Action
+  effect: You gain the Telepathy Capability for the rest of the scene.
+- name: Farcast
+  keywords:
+  - +Speed
+  prerequisites:
+  - Space Distortion
+  - Expert Guile
+  frequency: Daily x3
+  action_type: Free Action
+  trigger: You use the Move Teleport or activate the Teleporter Capability
+  effect: You activate Teleporter as if your Teleporter value were three times its normal value or you may take one willing Pokémon or Trainer along with you as you teleport so long as you are touching them when you activate Farcast. You may expend two uses of Farcast at once to choose both effects.
+- name: Warped Transmission
+  keywords:
+  - +Speed
+  prerequisites:
+  - Farcast
+  - Master Guile
+  frequency: 2 AP
+  action_type: Swift Action
+  trigger: You activate the Teleporter Capability or use the Move Ally Switch
+  effect: All adjacent foes to the square you end in after teleporting or using Ally Switch have their Evasion lowered by 3 for one full round and cannot trigger Attacks of Opportunity against you for Shifting until the end of your next turn.
+- name: Reality Bender
+  keywords:
+  - +Speed
+  prerequisites:
+  - Warper
+  - Expert Guile
+  frequency: Daily
+  action_type: Free Action
+  effect: You are able to subconsciously alter the fabric of reality to change small facts or circumstances. If your character is confronting a “random” event such as a die roll, coin flip, or cards being dealt, the character may activate this Feature to influence the event. In this scenario, the GM provides you with two possible outcomes, and you pick one of them to actually occur. This means you always decide the outcome of binary events such as a coin flip; cheating cards or slot machines is much harder, as there are multiple outcomes and you only get to pick between two. This Feature can also be used to generate common items worth  250 or less that the character might normally possess, such as a Potion or Poké Ball, when in a pinch. The character just happens to find the needed item among their belongings. This Feature can only create items you wish to use at that moment, and of which you have none available; such as needing to heal a Pokémon but having no Potions left. Items created with Reality Bender must be used quickly after activating the feature and cannot be stored for later.
+  notes: 'To be clear, this Feature refers to die rolls –in game-, not any die rolls used to PLAY the game. Also, GMs are encouraged to whap any Warpers on the nose with a rolled up newspaper if they try to apply to this to combat… except, perhaps, if they or their Pokémon attempts to use the Move Metronome…'
+- name: Command Versatility
+  prerequisites:
+  - Adept Command
+  - Guile
+  - or Pokémon Education
+  frequency: 1 AP
+  action_type: Free Action
+  trigger: You give a Command to a Pokémon.
+  effect: Your Pokémon may give up use of a Scene or Daily Move to regain use of a Scene or Daily Move which it has already used. Your Pokémon may give up use of a Daily Move to regain use of a Scene Move, but not vice-versa. You may use Command Versatility only once per Scene per Pokémon.
+- name: Press
+  prerequisites:
+  - Adept Intimidate
+  frequency: At-Will
+  action_type: Standard Action
+  target: Your own Pokémon.
+  effect: You hit your Pokémon, and they lose 1/6th of their Max Hit Points and are cured of Sleep. Raise any two of their Stats by +1 CS each, and you may add half of your Intimidate Rank to any Skill Checks made this round to make this Pokémon obey orders. Using Press on a Pokémon may make them dislike you.
+- name: Quick Switch
+  prerequisites:
+  - Novice Acrobatics or Novice Guile
+  frequency: 2 AP
+  action_type: Free Action
+  trigger: Your Pokémon Faints; or an opponent sends out a Pokémon
+  effect: You may return and send out a Pokémon as a Free Action. You may perform this Feature on your turn without a Trigger. Pokémon sent out by Quick Switch cannot trigger another trainer’s Quick Switch. When you swap Pokémon using Quick Switch, you do not lose a Pokémon turn.
+- name: Tutoring
+  prerequisites:
+  - Novice General Education
+  - Special (See Effect)
+  frequency: One Time Use x 3
+  action_type: Extended Action
+  effect: When activating this Feature, select a Move known either by yourself or by 3 Pokémon you own. This Move is Mastered. As an Extended Action, you may have Pokémon spend 2 Tutor Points to learn a Move you have Mastered. Pokémon targeted this way can only learn Moves that they could learn by Level Up, TM, Egg Move, or Move Tutor. You may take Tutoring multiple times, each time gaining 3 uses of the Feature.
+  notes: To be clear, this Feature lets you choose a total of three different Moves you can Tutor. The use limitation isn’t on how often you can Tutor them; once you have Mastered a Move, you can Tutor it At-Will.
+- name: Inspired Training
+  keywords:
+  - TRAINING
+  - ORDERS
+  prerequisites:
+  - Novice Charm
+  - Untrained Command
+  frequency: At-Will
+  action_type: Special
+  effect: The target becomes Inspired until the end of the effect duration. Inspired Pokémon gain a +1 bonus to Evasion and +2 to Save Checks.
+- name: Focused Command
+  keywords:
+  - ORDERS
+  prerequisites:
+  - Master Command
+  - one of Focus
+  - Guile
+  - Intimidate
+  - or Pokémon Education at Expert
+  frequency: At-Will
+  action_type: Standard Action + Swift Action
+  effect: You may have a second Pokémon take a turn this round, but both Pokémon can only take At-Will actions that round. Additionally, both Pokémon receive a -5 Penalty on all Damage Rolls. You may pay 1 AP at the beginning of the round to lift the Frequency Restriction OR the Damage Penalty for the remainder of the round, or pay 2 AP to lift both.
+  notes: Focused Command has no targets, which may be relevant to certain Features which refer to [ORDERS]
+- name: Reckless Advance
+  keywords:
+  - Orders
+  - Stratagem
+  frequency: Bind 2 AP
+  action_type: Standard Action
+  target: Your Pokémon
+  effect: While this Feature is Bound, increase the damage rolls of the target’s damaging melee attacks by +8, and these attacks Trip targets on Accuracy Rolls of 18+. When the target of Reckless Advance hits with a damaging melee attack, they become Vulnerable for one full round.
+- name: Strike Again!
+  keywords:
+  - Orders
+  frequency: Scene
+  action_type: Standard Action
+  target: Your Pokémon
+  effect: The target may immediately take an additional Standard Action to use an At-Will attack.
+- name: Trick Shot
+  keywords:
+  - Orders
+  - Stratagem
+  frequency: Bind 2 AP
+  action_type: Standard Action
+  target: Your Pokémon
+  effect: While this Feature is Bound, decrease the Accuracy Roll of the target’s damaging ranged attacks by -2. The Critical Hit range of those attacks is increased by +3. This Feature does not affect Moves without an AC value.
+- name: Long Shot
+  keywords:
+  - Orders
+  frequency: Scene x2
+  action_type: Standard Action
+  target: Your Pokémon
+  effect: The target’s damaging ranged attacks have their range doubled until the end of their next turn, and deal X additional damage. X is equal to the distance in meters that the attack traveled. Long Shot does not increase the size of area of effect attacks. If attacks altered by Long Shot are Critical Hits, add the value of the Damage Dice Roll an additional time to the total damage.
+- name: Capricious Whirl
+  keywords:
+  - Orders
+  - Stratagem
+  frequency: Bind 2 AP
+  action_type: Standard Action
+  target: Your Pokémon
+  effect: While this Feature is Bound, the target has a +3 bonus to its Evasion but deals 5 less damage with all damaging attacks.
+- name: Dazzling Dervish
+  keywords:
+  - Orders
+  frequency: Scene x2
+  action_type: Standard Action
+  target: Your Pokémon
+  effect: Until the end of their next turn, the target adds their non-stat Evasion to their Movement Capabilities and whenever they attack a foe or Shift through a square occupied by a foe, that foe suffers a -3 penalty to all rolls until the end of their next turn. This effect may only affect a foe once per round.
+- name: Pinpoint Strike
+  keywords:
+  - Orders
+  - Stratagem
+  frequency: Bind 2 AP
+  action_type: Standard Action
+  target: Your Pokémon
+  effect: Increase the Accuracy and Effect Range of the target’s damaging attacks by +2. These attacks deal 5 less damage, before applying weakness and resistance.
+- name: Perfect Aim
+  keywords:
+  - Orders
+  frequency: Scene x2
+  action_type: Standard Action
+  target: Your Pokémon
+  effect: 'The next damaging attack the target performs before the end of your next turn automatically hits and ignores Defensive Abilities but deals damage as if it were resisted one step further than normal. You may still roll to trigger any Effect Ranges or Critical Hits. All targets of the attack may not activate any Blessings in response, and the attack may not be Intercepted or avoided in any way (ex: with Dodge, Shield Moves, etc).'
+- name: Brace for Impact
+  keywords:
+  - Orders
+  - Stratagem
+  frequency: Bind 2 AP
+  action_type: Standard Action
+  target: Your Pokémon
+  effect: While this Feature is Bound, once a round, when the target uses a self-targeting Status Move, they may gain 5 Damage Reduction until the end of their next turn. They may also activate this effect as a Standard Action.
+- name: Sentinel Stance
+  keywords:
+  - Orders
+  frequency: Scene x2
+  action_type: Standard Action
+  target: Your Pokémon
+  effect: Until the end of your next turn, the target may attempt to Intercept attacks for allies as a Shift Action. If they do so, they gain 10 Damage Reduction against the attack. If the target is also under the effect of Brace for Impact, they may gain 5 Damage Reduction from it as if they had used a self-targeting Status Move.
+- name: Dive
+  keywords:
+  - +SPEED
+  prerequisites:
+  - Adept Acrobatics
+  frequency: Scene x2
+  action_type: Shift Action, Interrupt
+  trigger: You are targeted by a Ranged 1-Target Attack, or are in a Cone, Burst, Blast, or Line.
+  effect: You may immediately Shift 1 Meter, and then become Tripped. This Feature cannot be used if you are Stuck, Grappled, or otherwise impaired from Shifting. This Feature causes you to dodge Ranged attacks aimed at you, and may let you avoid Cones, Bursts, Blasts, or Lines if the shift removes you from the area of effect.
+- name: Fighter’s Versatility
+  keywords:
+  - +ANY
+  prerequisites:
+  - Learned two Scene or Daily Moves.
+  frequency: Scene
+  action_type: Free Action
+  trigger: You gain Initiative.
+  effect: You may give up use of a Scene or Daily Move to regain use of a Scene or Daily Move which you have already used. You may give up use of a Daily Move to regain use of a Scene Move, but not vice-versa.
+- name: Multi-Tasking
+  keywords:
+  - +SPEED
+  prerequisites:
+  - 20 Speed Stat
+  - Master Acrobatics
+  frequency: Scene x2
+  action_type: Swift Action
+  effect: You may take two Standard Actions instead of one this turn, but both actions must have an At-Will Frequency.
+- name: Walk It Off
+  keywords:
+  - +HP
+  prerequisites:
+  - Adept Athletics
+  - Novice Focus
+  frequency: Daily
+  action_type: Extended Action
+  effect: Remove one Injury from yourself and regain 1/4th of your maximum Hit Points. This Injury removal doesn’t count against the natural healing limit on Injuries each day.
+- name: First Aid Expertise
+  prerequisites:
+  - Medic Training
+  - Expert Medicine Education
+  frequency: Daily x3
+  action_type: Extended Action
+  target: Pokemon or Trainers
+  effect: The target may remove one Injury, has all Hit Points restored, and is cured of all Status Afflictions. You may use First Aid Expertise only once per day per target. First Aid Expertise requires access to a First Aid Kit.
+- name: Let Me Help You With That
+  prerequisites:
+  - None
+  frequency: Daily x3
+  action_type: Full Action, Interrupt
+  trigger: An allied Trainer fails a Skill Check in a Skill you have Ranked at Novice or higher.
+  effect: The ally may re-roll the Skill Check with a Bonus equal to your Skill Rank.
+- name: PokéManiac
+  prerequisites:
+  - Adept Pokémon Education
+  frequency: At-Will
+  action_type: Standard Action
+  target: A Pokémon
+  effect: Make a Pokemon Education Check with a DC of 10. If you succeed, you determine the target’s Level, Types, Nature, and Abilities.
+- name: Skill Monkey
+  prerequisites:
+  - Three Skills at Adept Rank or higher
+  frequency: Daily x3
+  action_type: Free Action
+  trigger: You make a Skill Check
+  effect: You may re-roll the triggering Skill Check with a +2 Bonus, taking the new result. This Feature may be used to re-roll a specific roll only once.

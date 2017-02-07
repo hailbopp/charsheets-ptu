@@ -1,0 +1,20 @@
+name: charsheetsptu
+channels:
+- defaults
+dependencies:
+- jinja2=2.9.4=py35_0
+- lxml=3.7.2=py35_0
+- markupsafe=0.23=py35_2
+- pip=9.0.1=py35_1
+- python=3.5.2=0
+- pyyaml=3.12=py35_0
+- setuptools=27.2.0=py35_1
+- six=1.10.0=py35_0
+- vs2015_runtime=14.0.25123=0
+- wheel=0.29.0=py35_0
+- pip:
+  - docxtpl==0.3.1
+  - python-docx==0.8.6
+  - tqdm==4.11.2
+prefix: C:\Program Files\Anaconda3\envs\charsheetsptu
+

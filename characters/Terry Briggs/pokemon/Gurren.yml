@@ -1,53 +1,54 @@
 name: Gurren
-species: Kakuna
+species: Beedrill
 gender: Male
 types:
   - Bug
   - Poison
 
-level: 7
-current_xp: 69
+level: 10
+current_xp: 98
 nature: Docile
 
 height: Small
 weight: 1
 
 stats:
-  hp: 12
-  attack: 3
-  special_attack: 4
-  defense: 12
-  special_defense: 4
-  speed: 5
+  hp: 7
+  attack: 19
+  special_attack: 5
+  defense: 4
+  special_defense: 8
+  speed: 18
 
 abilities:
-  - Shed Skin
+  - Sniper
 
 capabilities:
   Overland: 2
   Swim: 2
-  Long Jump: 1
-  High Jump: 1
-  Power: 1
+  Long Jump: 3
+  High Jump: 4
+  Power: 4
+  Sky: 8
   Underdog:
-  Threaded:
   Naturewalk (Forest):
   Naturewalk (Grassland):
 
 skills:
-  Athletics: 1d6
-  Acrobatics: 1d6
-  Combat: 2d6
-  Stealth: 2d6
-  Perception: 2d6
-  Focus: 3d6
+  Athletics: 3d6+2
+  Acrobatics: 5d6+3
+  Combat: 4d6+1
+  Stealth: 3d6+3
+  Perception: 3d6+3
+  Focus: 3d6+3
 
 moves:
   - Poison Sting
   - String Shot
   - Harden
+  - Fury Attack
 
-tutor_points: 2
+tutor_points: 3
 tutored: []
 inherited_moves: []
 vitamins: []

@@ -1,0 +1,82 @@
+- Name: 'Maneuver: Attack of Opportunity'
+  maneuver_type: action
+  Frequency: Free Action
+  SpecialEffect: >-
+    Attacks of Opportunity can be triggered in multiple ways:
+      » An adjacent foe uses a Push, Grapple, Disarm, Trip, or Dirty Trick Maneuver that does not target you.
+      » An adjacent foe stands up.
+      » An adjacent foe uses a Ranged Attack that does not target someone adjacent to it.
+      » An adjacent foe uses a Standard Action to pick up or retrieve an item.
+      » An adjacent foe Shifts out of a Square adjacent to you.
+    You may make a Struggle Attack against the triggering foe as an Interrupt. You may use Attack of Opportunity only once per round. Attacks of Opportunity cannot be made by Sleeping, Flinched, or Paralyzed targets.
+
+- Name: 'Maneuver: Disengage'
+  maneuver_type: action
+  Frequency: Shift Action
+  SpecialEffect: You may Shif 1 Meter. Shifing this way does not provoke an Attack of Opportunity.
+
+- Name: "Maneuver: Disarm"
+  maneuver_type: move
+  Frequency: At-Will
+  AC: 6
+  Range: Melee, 1 Target
+  MoveCategory: Status
+  SpecialEffect: You and the target each make opposed Combat or Stealth Checks. If you win, the target’s Held Item (Main Hand or Oﬀ-Hand for humans) falls to the ground.
+
+- Name: "Maneuver: Dirty Trick"
+  maneuver_type: move
+  Frequency: At-Will
+  AC: 2
+  Range: Melee, 1 Target
+  MoveCategory: Status
+  SpecialEffect: >-
+    You may perform any of the Dirty Tricks listed below. You may use each trick only once each Scene per target.
+      * Hinder: You and the target make Opposed Athletics Checks. If you win, the target is Slowed and takes a -2 penalty to all Skill Checks for one full round.
+      * Blind: You and the target make Opposed Stealth Checks. If you win, the target is Blinded for one full round.
+      * Low Blow: You and the target make Opposed Acrobatics Checks. If you win, the target is Vulnerable and has their Initiative set to 0 until the end of your next turn.
+
+- Name: "Maneuver: Manipulate"
+  manuver_type: move
+  Frequency: At-Will
+  AC: 2
+  Range: 6, 1 Target
+  MoveCategory: Status
+  SpecialEffect: >-
+    You may perform any of the Manipulations listed below. You may use each Manipulation only once each Scene per target. Manipulate can only be performed by Trainers.
+      * Bon Mot
+      * Flirt
+      * Terrorize
+
+- Name: "Maneuver: Push"
+  maneuver_type: move
+  Frequency: At-Will
+  AC: 4
+  Range: Melee, 1 Target
+  MoveCategory: Status
+  SpecialEffect: You and the target each make opposed Combat or Athletics Checks. If you win, the target is Pushed back 1 Meter directly away from you. If you have Movement remaining this round, you may then Move into the newly occupied Space, and Push the target again. This continues until you choose to stop, or have no Movement remaining for the round. Push may only be used against a target whose weight is no heavier than your Heavy Lifing rating.
+
+- Name: "Maneuver: Sprint"
+  maneuver_type: action
+  Frequency: Standard Action
+  MoveCategory: Status
+  Range: Self
+  SpecialEffect: Increase your Movement SPeeds by 50% for the rest of your turn.
+
+- Name: "Maneuver: Trip"
+  Frequency: At-Will
+  AC: 6
+  MoveCategory: Status
+  Range: Melee, 1 Target
+  SpecialEffect: You and the target each make opposed Combat or Acrobatics checks. If you win, the target is knocked over and Tripped.
+
+- Name: "Maneuver: Intercept"
+  Frequency: Full Action, Interrupt
+  MoveCategory: Status
+  SpecialEffect: "See the rules for 'Maneuver: Intercept Melee' and 'Maneuver: Intercept Ranged'."
+
+- Name: "Maneuver: Grapple"
+  Frequency: At-Will
+  AC: 4
+  MoveCategory: Status
+  Range: Melee, 1 Target
+  SpecialEffect: "See the rules for 'Maneuver: Grapple'."

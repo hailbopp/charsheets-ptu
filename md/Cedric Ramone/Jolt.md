@@ -2,23 +2,23 @@
 ------------------------------------------------------------------------
 
 ### Overview
-Level 7 male Naive Pichu
+Level 10 male Naive Pikachu
 
 Type: Electric
 Height: 1'0"
 
 Weight: 4.4lb
 
-29 HP
+44 HP
 
 ### Basic Stats
 | Stat              | Value |
 | ----------------- | ----- |
-| HP                | 4 |
-| Attack            | 6 |
-| Special Attack    | 10 |
-| Defense           | 2 |
-| Special Defense   | 2 |
+| HP                | 8 |
+| Attack            | 14 |
+| Special Attack    | 9 |
+| Defense           | 4 |
+| Special Defense   | 3 |
 | Speed             | 15 |
 
 ### Abilities
@@ -41,6 +41,8 @@ Weight: 4.4lb
 * Charm
 * Thunder Shock
 * Tail Whip
+* Sweet Kiss
+* Quick Attack
 
 ### Skills
 | Skill         | Rank |
@@ -55,4 +57,4 @@ Weight: 4.4lb
 ### Advancement
 Tutor Points: 2
 
-XP: 69
+XP: 98

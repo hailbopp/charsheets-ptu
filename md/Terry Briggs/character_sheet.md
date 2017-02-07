@@ -76,10 +76,10 @@ Level 3
 | Item          | Quantity |
 | ------------- | -------- |
 | Money | 500 |
-| Poke Ball | 10 |
+| Poke Ball | 8 |
 | Potion | 10 |
 
 ### Advancement
 Level 3
 
-Current XP: 2 / 10
+Current XP: 6 / 10

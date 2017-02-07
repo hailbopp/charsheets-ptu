@@ -5,8 +5,8 @@ types:
   - Normal
   - Flying
 
-level: 4
-current_xp: 30
+level: 5
+current_xp: 58
 nature: Relaxed
 
 height:
@@ -17,7 +17,7 @@ stats:
   attack: 10
   special_attack: 4
   defense: 10
-  special_defense: 4
+  special_defense: 5
   speed: 8
 
 abilities:

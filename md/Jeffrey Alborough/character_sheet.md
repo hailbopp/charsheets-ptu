@@ -95,4 +95,4 @@ Level 3
 ### Advancement
 Level 3
 
-Current XP: 2 / 10
+Current XP: 6 / 10

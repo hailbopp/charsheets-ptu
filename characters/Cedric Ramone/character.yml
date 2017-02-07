@@ -8,14 +8,14 @@ background:
     novice:
     pathetic:
 
-level: 2
-current_xp: 2
+level: 3
+current_xp: 4
 
 stats:
   hp: 10
   attack: 5
   special_attack: 7
-  defense: 9
+  defense: 10
   special_defense: 5
   speed: 10
 
@@ -33,6 +33,7 @@ features:
   - Mt. Moon Blues
   - Cacophony
   - Signature Move (Sing)
+  - Fashionista (Charm) (Command)
 
 actions:
   - Song of Life
@@ -77,3 +78,18 @@ inventory:
   Guitar: 1
   Poke Ball: 3
   Potion: 3
+
+pokedex:
+  seen:
+    - Ralts
+    - Pichu
+    - Ekans
+    - Kakuna
+    - Fletchling
+    - Flabebe
+    - Chimchar
+    - Graveler
+  caught:
+    - Pichu
+    - Pikachu
+    - Ekans

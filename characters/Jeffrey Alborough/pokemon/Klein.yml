@@ -4,15 +4,15 @@ gender: Male
 types:
   - Fire
 
-level: 7
-current_xp: 69
+level: 8
+current_xp: 80
 nature: Composed
 
 height:
 weight:
 
 stats:
-  hp: 6
+  hp: 7
   attack: 8
   special_attack: 10
   defense: 6

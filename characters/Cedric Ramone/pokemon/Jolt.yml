@@ -1,22 +1,22 @@
 name: Jolt
-species: Pichu
+species: Pikachu
 gender: Male
 types:
   - Electric
 
-level: 7
-current_xp: 69
+level: 10
+current_xp: 98
 nature: Naive
 
 height: 1'0"
 weight: 4.4lb
 
 stats:
-  hp: 4
-  attack: 6
-  special_attack: 10
-  defense: 2
-  special_defense: 2
+  hp: 8
+  attack: 14
+  special_attack: 9
+  defense: 4
+  special_defense: 3
   speed: 15
 
 abilities:
@@ -45,6 +45,8 @@ moves:
   - Charm
   - Thunder Shock
   - Tail Whip
+  - Sweet Kiss
+  - Quick Attack
 
 tutor_points: 2
 tutored: []

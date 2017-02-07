@@ -2,19 +2,19 @@
 ------------------------------------------------------------------------
 
 ### Overview
-Level 7 male Composed Chimchar
+Level 8 male Composed Chimchar
 
 Type: Fire
 Height: None
 
 Weight: None
 
-35 HP
+39 HP
 
 ### Basic Stats
 | Stat              | Value |
 | ----------------- | ----- |
-| HP                | 6 |
+| HP                | 7 |
 | Attack            | 8 |
 | Special Attack    | 10 |
 | Defense           | 6 |
@@ -56,4 +56,4 @@ Weight: None
 ### Advancement
 Tutor Points: 2
 
-XP: 69
+XP: 80

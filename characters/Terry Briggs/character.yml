@@ -10,7 +10,7 @@ background:
     pathetic: Guile, Occult Education, Combat
 
 level: 3
-current_xp: 2
+current_xp: 6
 
 stats:
   hp: 13
@@ -70,5 +70,22 @@ equipment:
 
 inventory:
   Money: 500
-  Poke Ball: 10
+  Poke Ball: 8
   Potion: 10
+
+pokedex:
+  seen:
+    - Weedle
+    - Kakuna
+    - Flabebe
+    - Ekans
+    - Pichu
+    - Ralts
+    - Chimchar
+    - Fletchling
+    - Graveler
+  caught:
+    - Weedle
+    - Kakuna
+    - Flabebe
+    - Ekans

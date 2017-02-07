@@ -4,9 +4,9 @@
 ### Overview
 19-year-old female Mentalist
 
-Level 2
+Level 3
 
-65 HP
+67 HP
 
 5 AP
 
@@ -16,7 +16,7 @@ Level 2
 | HP                | 17 |
 | Attack            | 5 |
 | Special Attack    | 8 |
-| Defense           | 8 |
+| Defense           | 9 |
 | Special Defense   | 7 |
 | Speed             | 10 |
 
@@ -26,6 +26,8 @@ Level 2
 * Power of Mind (Levitate)
 * Psionic Sight
 * Telepath
+* Researcher (Apothecary) (Occultism)
+* Apothecary
 
 ### Edges
 * Iron Mind
@@ -38,6 +40,9 @@ Level 2
 ### Actions
 
 ### Moves
+* Confusion
+* Kinesis
+* Barrier
 
 ### Skills
 | Skill         | Rank |
@@ -87,13 +92,13 @@ Level 2
 | Lighter | 1 |
 | Money | 150 |
 | Paralyze Heal | 1 |
-| Poke Ball | 10 |
+| Poke Ball | 9 |
 | Potion | 1 |
 | Sleeping Bag | 1 |
 | Sturdy Rope | 1 |
 | Waterproof Flashlight | 1 |
 
 ### Advancement
-Level 2
+Level 3
 
-Current XP: 2 / 10
+Current XP: 6 / 10

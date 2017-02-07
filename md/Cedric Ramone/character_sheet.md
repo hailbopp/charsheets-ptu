@@ -4,9 +4,9 @@
 ### Overview
 21-year-old male Laid-back Rocker
 
-Level 2
+Level 3
 
-44 HP
+46 HP
 
 5 AP
 
@@ -16,7 +16,7 @@ Level 2
 | HP                | 10 |
 | Attack            | 5 |
 | Special Attack    | 7 |
-| Defense           | 9 |
+| Defense           | 10 |
 | Special Defense   | 5 |
 | Speed             | 10 |
 
@@ -26,6 +26,7 @@ Level 2
 * Mt. Moon Blues
 * Cacophony
 * Signature Move (Sing)
+* Fashionista (Charm) (Command)
 
 ### Edges
 * Basic Skill (Command)
@@ -86,6 +87,6 @@ Level 2
 | Potion | 3 |
 
 ### Advancement
-Level 2
+Level 3
 
-Current XP: 2 / 10
+Current XP: 4 / 10

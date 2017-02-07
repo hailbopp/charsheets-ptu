@@ -9,14 +9,14 @@ background:
     novice: Perception
     pathetic: Combat, Survival, Technology Education
 
-level: 2
-current_xp: 2
+level: 3
+current_xp: 6
 
 stats:
   hp: 17
   attack: 5
   special_attack: 8
-  defense: 8
+  defense: 9
   special_defense: 7
   speed: 10
 
@@ -34,6 +34,8 @@ features:
   - Power of Mind (Levitate)
   - Psionic Sight
   - Telepath
+  - Researcher (Apothecary) (Occultism)
+  - Apothecary
 
 capabilities:
   Telekinetic: 4
@@ -42,7 +44,10 @@ capabilities:
 
 actions: []
 
-moves: []
+moves:
+  - Confusion
+  - Kinesis
+  - Barrier
 
 skills:
   acrobatics: 2
@@ -80,7 +85,21 @@ inventory:
   Sturdy Rope: 1
   Collection Jar: 1
   Lighter: 1
-  Poke Ball: 10
+  Poke Ball: 9
   Potion: 1
   Antidote: 1
   Paralyze Heal: 1
+
+pokedex:
+  seen:
+    - Ralts
+    - Pichu
+    - Kakuna
+    - Ekans
+    - Fletchling
+    - Flabebe
+    - Chimchar
+    - Graveler
+  caught:
+    - Ralts
+    - Ekans

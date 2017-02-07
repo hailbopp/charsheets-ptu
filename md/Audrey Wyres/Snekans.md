@@ -1,54 +1,56 @@
-# Bourbon
+# Snekans
 ------------------------------------------------------------------------
 
 ### Overview
-Level 5 male Relaxed Fletchling
+Level 6 female Timid Ekans
 
-Type: Normal / Flying
-Height: None
+Type: Poison
+Height: Medium
 
-Weight: None
+Weight: 1
 
-33 HP
+37 HP
 
 ### Basic Stats
 | Stat              | Value |
 | ----------------- | ----- |
-| HP                | 6 |
-| Attack            | 10 |
-| Special Attack    | 4 |
-| Defense           | 10 |
-| Special Defense   | 5 |
-| Speed             | 8 |
+| HP                | 7 |
+| Attack            | 7 |
+| Special Attack    | 6 |
+| Defense           | 6 |
+| Special Defense   | 8 |
+| Speed             | 11 |
 
 ### Abilities
-* Big Pecks
+* Shed Skin
 
 ### Capabilities
 | Capability    | Value |
 | ------------- | ----- |
-| Guster |  |
+| Darkvision |  |
 | High Jump | 1 |
 | Long Jump | 1 |
-| Overland | 3 |
+| Naturewalk (Grassland) |  |
+| Overland | 5 |
 | Power | 1 |
-| Sky | 5 |
-| Swim |  |
+| Stealth |  |
+| Swim | 3 |
 | Underdog |  |
 
 ### Moves
-* Tackle
-* Growl
+* Leer
+* Wrap
+* Poison Sting
 
 ### Skills
 | Skill         | Rank |
 | ------------- | ---- |
-| Acrobatics | 3d6+2 |
-| Athletics | 2d6 |
+| Acrobatics | 2d6 |
+| Athletics | 2d6+1 |
 | Combat | 2d6 |
 | Focus | 2d6 |
-| Perception | 3d6+2 |
-| Stealth | 2d6 |
+| Perception | 2d6 |
+| Stealth | 3d6+1 |
 
 ### Advancement
 Tutor Points: 2

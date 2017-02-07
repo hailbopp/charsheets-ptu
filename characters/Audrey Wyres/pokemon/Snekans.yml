@@ -1,0 +1,57 @@
+name: Snekans
+species: Ekans
+gender: Female
+types:
+  - Poison
+
+level: 6
+current_xp: 58
+nature: Timid
+
+height: Medium
+weight: 1
+
+stats:
+  hp: 7
+  attack: 7
+  special_attack: 6
+  defense: 6
+  special_defense: 8
+  speed: 11
+
+abilities:
+  - Shed Skin
+
+capabilities:
+  Overland: 5
+  Swim: 3
+  Long Jump: 1
+  High Jump: 1
+  Power: 1
+  Underdog:
+  Darkvision:
+  Stealth:
+  Naturewalk (Grassland):
+
+skills:
+  Athletics: 2d6+1
+  Acrobatics: 2d6
+  Combat: 2d6
+  Stealth: 3d6+1
+  Perception: 2d6
+  Focus: 2d6
+
+moves:
+  - Leer
+  - Wrap
+  - Poison Sting
+
+tutor_points: 2
+tutored: []
+inherited_moves: []
+vitamins: []
+poffins: []
+
+held_item:
+
+notes: ""

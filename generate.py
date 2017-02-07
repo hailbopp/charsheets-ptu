@@ -18,12 +18,17 @@ jinja = Environment(
     loader=FileSystemLoader('./templates'),
 )
 
-characters = [d for d in listdir('characters') if isdir(join('characters', d))]
-with open('data/movelist.yml') as movesfile:
-    moves_data = yaml.load(movesfile)
-with open('data/damage_chart.yml') as damagefile:
-    damage_chart = yaml.load(damagefile)
 
+def get_yaml(filename):
+    with open(filename, encoding='utf8') as yamlfile:
+        return yaml.load(yamlfile)
+
+characters = [d for d in listdir('characters') if isdir(join('characters', d))]
+
+moves_data = get_yaml('data/movelist.yml')
+damage_chart = get_yaml('data/damage_chart.yml')
+combat_maneuvers = get_yaml('data/combat_maneuvers.yml')
+action_features = get_yaml('data/action_features.yml')
 
 def generate():
     if exists('md'):
@@ -36,19 +41,19 @@ def generate():
 
     character_data = []
     for char_name in characters:
-        with open('characters/%s/character.yml' % char_name, 'r') as sf:
+        with open('characters/%s/character.yml' % char_name, 'r', encoding="utf8") as sf:
             chardata = yaml.load(sf)
         char_result = char_template.render(chardata)
         makedirs('md/%s' % char_name)
-        with open('md/%s/character_sheet.md' % char_name, 'w') as dest:
+        with open('md/%s/character_sheet.md' % char_name, 'w', encoding="utf8") as dest:
             dest.write(char_result)
 
         pokemon = [y for y in listdir('characters/%s/pokemon' % char_name)]
         for p in pokemon:
-            with open('characters/%s/pokemon/%s' % (char_name, p), 'r') as poke_src:
+            with open('characters/%s/pokemon/%s' % (char_name, p), 'r', encoding="utf8") as poke_src:
                 pokedata = yaml.load(poke_src)
             poke_result = poke_template.render(pokedata)
-            with open('md/%s/%s.md' % (char_name, pokedata['name']), 'w') as dest:
+            with open('md/%s/%s.md' % (char_name, pokedata['name']), 'w', encoding="utf8") as dest:
                 dest.write(poke_result)
         character_data.append({
             'name': char_name,
@@ -123,11 +128,11 @@ def generate_cards():
 
     entities = []
     for char_name in tqdm(characters):
-        with open('characters/%s/character.yml' % char_name, 'r') as sf:
+        with open('characters/%s/character.yml' % char_name, 'r', encoding="utf8") as sf:
             chardata = yaml.load(sf)
             entities.append((chardata, EntityType.Player))
         for p in [y for y in listdir('characters/%s/pokemon' % char_name)]:
-            with open('characters/%s/pokemon/%s' % (char_name, p), 'r') as poke_src:
+            with open('characters/%s/pokemon/%s' % (char_name, p), 'r', encoding="utf8") as poke_src:
                 pokedata = yaml.load(poke_src)
                 pokedata['player_name'] = char_name
                 entities.append((pokedata, EntityType.Pokemon))
